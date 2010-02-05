@@ -12,8 +12,11 @@ require_once(INCLUDE_PATH.'Script.php');
 require_once(CLASS_PATH.'map.class.php');
 require_once(CLASS_PATH.'ownuniverse.class.php');
 
-if (headers_sent($file,$line)) die("Erreur 'header': $file:$line");	
-$connexion = Config::DB_Connect();
+DataEngine::conf_cache('EmpireAllys');
+DataEngine::conf_cache('EmpireEnnemy');
+
+//if (headers_sent($file,$line)) die("Erreur 'header': $file:$line");
+//$connexion = Config::DB_Connect();
 
 $map = map::getinstance(); // initialisation...
 
