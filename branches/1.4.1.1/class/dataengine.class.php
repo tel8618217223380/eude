@@ -393,7 +393,7 @@ ead;
     static public function a_race_ressources($race) {
         $data = array(
             'Cyborg' => array('Titane'=>8, 'Cuivre'=>16.5, 'Fer'=>11,'Aluminium'=>12.5,'Mercure'=>10,'Silicium'=>12,'Uranium'=>5,'Krypton'=>9,'Azote'=>15,'Hydrogene'=>1),
-            'Jamazoide' => array('Titane'=>12.5, 'Cuivre'=>26, 'Fer'=>10, 'Aluminium'=>12, 'Mercure'=>9, 'Silicium'=>5, 'Uranium'=>8, 'Krypton'=>11, 'Azote'=>16.5, 'Hydrogene'=>1),
+            'Jamozoïde' => array('Titane'=>12.5, 'Cuivre'=>26, 'Fer'=>10, 'Aluminium'=>12, 'Mercure'=>9, 'Silicium'=>5, 'Uranium'=>8, 'Krypton'=>11, 'Azote'=>16.5, 'Hydrogene'=>1),
             'Magumar' => array('Titane'=>15, 'Cuivre'=>12.5, 'Fer'=>16.5, 'Aluminium'=>5, 'Mercure'=>8, 'Silicium'=>9, 'Uranium'=>11, 'Krypton'=>10, 'Azote'=>12, 'Hydrogene'=>1),
             'Humain' => array('Titane'=>16.5, 'Cuivre'=>12, 'Fer'=>8, 'Aluminium'=>11, 'Mercure'=>15, 'Silicium'=>10, 'Uranium'=>12.5, 'Krypton'=>5, 'Azote'=>9, 'Hydrogene'=>1),
             'Mozoran' => array('Titane'=>11, 'Cuivre'=>10, 'Fer'=>9, 'Aluminium'=>16.5, 'Mercure'=>5, 'Silicium'=>8, 'Uranium'=>12, 'Krypton'=>15, 'Azote'=>12.5, 'Hydrogene'=>1),
