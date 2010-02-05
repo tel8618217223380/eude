@@ -12,7 +12,7 @@ DataEngine::CheckPermsOrDie(CXX_MEMBRES_EDIT);
 
 $tabrace[0]='Cyborg';
 $tabrace[1]='Humain';
-$tabrace[2]='Jamazoide';
+$tabrace[2]='Jamozoïde';
 $tabrace[3]='Magumar';
 $tabrace[4]='Mosoran';
 $tabrace[5]='Ozoidien';
