@@ -181,32 +181,45 @@ class DataEngine extends Members {
             while ($ligne=mysql_fetch_assoc($mysql_result)) {
                 if (trim($ligne['key'])=='') continue;
                 self::$settings[$ligne['key']] = unserialize(stripslashes($ligne['value']));
-            } { // Initialisations particulières
+            }
+
+
+            // Initialisations particulières
+            {
+
                 if (!isset(self::$settings['perms'])) self::Perms();
 
-                if (self::$conf_load['wormhole_cleaning']) {
+                if (self::$conf_load['EmpireAllys'] &&
+                        !isset(self::$settings['EmpireAllys']))
+                    self::conf_add('EmpireAllys', '');
+
+                if (self::$conf_load['EmpireEnnemy'] &&
+                        !isset(self::$settings['EmpireEnnemy']))
+                    self::conf_add('EmpireEnnemy', '');
+
+                if (self::$conf_load['wormhole_cleaning'])
                     if (!isset(self::$settings['wormhole_cleaning'])) {
                         self::conf_add('wormhole_cleaning',
                                 array('enabled' => false,
                                 'lastrun' => 0)
                         );
                     }
-                    $wormhole_cleaning = self::$settings['wormhole_cleaning'];
-                    if (date('w')==0 && $wormhole_cleaning['enabled']) {
-                        $runat = mktime(2, 10, 0, date("m"), date("d"), date("Y"));
-                        $now   = time();
-                        if ($now > $runat && $runat > $wormhole_cleaning['lastrun']) {
-                            self::sql('DELETE FROM SQL_PREFIX_Coordonnee WHERE `TYPE` = 1 AND `INACTIF` = 1');
-                            self::sql('UPDATE SQL_PREFIX_Coordonnee SET `INACTIF` = 1 WHERE `TYPE` = 1');
-                            self::sql('INSERT INTO SQL_PREFIX_Log (DATE,LOGIN,IP) VALUES(NOW(),\'vortex_reset_by:'.$_SESSION['_login'].'\' ,\''.Get_IP().'\')');
-                            $wormhole_cleaning['lastrun'] = $now;
-                            self::conf_update('wormhole_cleaning', $wormhole_cleaning);
-                            self::sql_do_spool(); // Mettre à jour maintenant, pas que deux membres le fasse a 1/2sec d'intervalle.
-                        }
+                $wormhole_cleaning = self::$settings['wormhole_cleaning'];
+                if (date('w')==0 && $wormhole_cleaning['enabled']) {
+                    $runat = mktime(2, 10, 0, date("m"), date("d"), date("Y"));
+                    $now   = time();
+                    if ($now > $runat && $runat > $wormhole_cleaning['lastrun']) {
+                        self::sql('DELETE FROM SQL_PREFIX_Coordonnee WHERE `TYPE` = 1 AND `INACTIF` = 1');
+                        self::sql('UPDATE SQL_PREFIX_Coordonnee SET `INACTIF` = 1 WHERE `TYPE` = 1');
+                        self::sql('INSERT INTO SQL_PREFIX_Log (DATE,LOGIN,IP) VALUES(NOW(),\'vortex_reset_by:'.$_SESSION['_login'].'\' ,\''.Get_IP().'\')');
+                        $wormhole_cleaning['lastrun'] = $now;
+                        self::conf_update('wormhole_cleaning', $wormhole_cleaning);
+                        self::sql_do_spool(); // Mettre à jour maintenant, pas que deux membres le fasse a 1/2sec d'intervalle.
                     }
                 }
             }
-            self::$conf_load=array();
+        }
+        self::$conf_load=array();
         }
         return self::$conf_loaded;
     }
@@ -587,6 +600,7 @@ interface iDataEngine_Config {
     static public function GetDefaultGrade();
     static public function GetMyEmpire();
 
+    // TODO remove me #176
     static public function GetEmpireEnnemy();
     static public function GetEmpireAllys();
 

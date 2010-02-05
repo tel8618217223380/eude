@@ -95,7 +95,7 @@ function array_fullsqlesc(&$item1, $key) {
 if(isset($_POST['emp_allywars']) && $_POST['emp_allywars'] != '') {
     $mysql_result = DataEngine::sql('UPDATE SQL_PREFIX_Coordonnee SET TYPE=0 WHERE TYPE in (3,5)');
 
-    $tmp = Config::GetEmpireAllys();
+    $tmp = DataEngine::config('EmpireAllys');
     array_walk($tmp, 'array_fullsqlesc');
     $tmp = implode(',', $tmp);
     if ($tmp!='') {
@@ -103,7 +103,7 @@ if(isset($_POST['emp_allywars']) && $_POST['emp_allywars'] != '') {
         $allysnb = mysql_affected_rows();
     } else $allysnb = 0;
 
-    $tmp = Config::GetEmpireEnnemy();
+    $tmp = DataEngine::config('EmpireEnnemy');
     array_walk($tmp, 'array_fullsqlesc');
     $tmp = implode(',', $tmp);
     if ($tmp!='') {

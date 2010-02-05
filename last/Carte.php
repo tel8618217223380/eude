@@ -8,6 +8,8 @@ require_once('./init.php');
 require_once(INCLUDE_PATH.'Script.php');
 require_once(CLASS_PATH.'map.class.php');
 
+DataEngine::conf_cache('EmpireAllys');
+DataEngine::conf_cache('EmpireEnnemy');
 
 if (!DataEngine::CheckPerms('CARTE'))
     output::Boink(ROOT_URL.'Mafiche.php');
