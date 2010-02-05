@@ -123,6 +123,8 @@ class ownuniverse {
         $tmp = explode("\n", $tmp);
         $i = 0;
         foreach ($this->ressourcesnames as $k => $v) {
+            $tmp[$i] = trim($parser->GetInner($tmp[$i],"[$v ] $v"));
+            $tmp[$i] = trim($parser->GetInner($tmp[$i],"[$v] $v"));
             $tmp[$i] = trim($parser->GetInner($tmp[$i],$v));
             $tmp[$i] = $parser->cleaning_array(explode(DATA_SEP, $tmp[$i]));
             foreach($tmp[$i] as $p => $n) {
@@ -140,6 +142,8 @@ class ownuniverse {
         $tmp = explode("\n", $tmp);
         $i = 0;
         foreach ($this->ressourcesnames as $k => $v) {
+            $tmp[$i] = trim($parser->GetInner($tmp[$i],"[$v ] $v"));
+            $tmp[$i] = trim($parser->GetInner($tmp[$i],"[$v] $v"));
             $tmp[$i] = trim($parser->GetInner($tmp[$i],$v));
             $tmp[$i] = $parser->cleaning_array(explode(DATA_SEP, $tmp[$i]));
             foreach($tmp[$i] as $p => $n) {
@@ -157,6 +161,8 @@ class ownuniverse {
         $tmp = explode("\n", $tmp);
         $i = 0;
         foreach ($this->ressourcesnames as $k => $v) {
+            $tmp[$i] = trim($parser->GetInner($tmp[$i],"[$v ] $v"));
+            $tmp[$i] = trim($parser->GetInner($tmp[$i],"[$v] $v"));
             $tmp[$i] = trim($parser->GetInner($tmp[$i],$v));
             $tmp[$i] = $parser->cleaning_array(explode(DATA_SEP, $tmp[$i]));
             foreach($tmp[$i] as $p => $n) {
@@ -173,6 +179,8 @@ class ownuniverse {
         $tmp = explode("\n", $tmp);
         $i = 0;
         foreach ($this->ressourcesnames as $k => $v) {
+            $tmp[$i] = trim($parser->GetInner($tmp[$i],"[$v ] $v"));
+            $tmp[$i] = trim($parser->GetInner($tmp[$i],"[$v] $v"));
             $tmp[$i] = trim($parser->GetInner($tmp[$i],$v));
             $tmp[$i] = $parser->cleaning_array(explode(DATA_SEP, $tmp[$i]));
             foreach($tmp[$i] as $p => $n) {
