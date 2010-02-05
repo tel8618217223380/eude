@@ -1,7 +1,7 @@
 <?php
 /**
- * $Author: Alex10336 $
- * $Revision: 277 $
+ * $Author$
+ * $Revision$
  **/
 
 class scanner_addons implements addon_config {

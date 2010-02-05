@@ -1,7 +1,7 @@
 <?php
 /*
- * $Author: alex $
- * $Revision: 160 $
+ * $Author$
+ * $Revision$
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
  */
 include_once('../../init.php');

@@ -3,7 +3,7 @@ var metadata = <><![CDATA[
 // @author         Alex10336
 // @name           Data Engine
 // @namespace      eude
-// @version        1.4.2 $Revision: 281 $
+// @version        1.4.2 $Revision$
 // @homepage       http://app216.free.fr/eu2/tracker
 // @description    Script de liaison entre firefox et un serveur Data Engine
 // @license        http://www.gnu.org/licenses/gpl-2.0.html GNU Public License

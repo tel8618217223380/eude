@@ -1,7 +1,7 @@
 <?php
 /**
- * $Author: Alex10336 $
- * $Revision: 281 $
+ * $Author$
+ * $Revision$
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
 **/
 if (!SCRIPT_IN) die('Need by included');

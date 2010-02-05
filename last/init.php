@@ -1,8 +1,8 @@
 <?php
 /**
- * $Author: Alex10336 $
- * $HeadURL: svn://pont/trunk/www/init.php $
- * $Revision: 277 $
+ * $Author$
+ * $HeadURL$
+ * $Revision$
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
  **/
 

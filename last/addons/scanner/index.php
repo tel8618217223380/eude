@@ -1,7 +1,7 @@
 <?php
 /**
- * $Author: Alex10336 $
- * $Revision: 280 $
+ * $Author$
+ * $Revision$
  **/
 
 // Constantes par défaut:
