@@ -16,7 +16,7 @@
 
 <table border=0>
 <tr>
-<td>[http://app216.free.fr/wordpress/wp-content/uploads/capture-décran1.png http://app216.free.fr/wordpress/wp-content/uploads/capture-d%C3%A9cran1-150x150.png]</td>
+<td>[http://eude.googlecode.com/svn/wiki/config.options.png http://eude.googlecode.com/svn/wiki/config.options.th.png]</td>
 <td>
 ====Pour configurer ce script (voir capture ci-contre):====
  * Dans le jeu cliquez sur Configuration puis Options
@@ -30,4 +30,4 @@ Si les informations données sont correcte, le script s’active, et vous le sig
 
 Exemple d’un script actif:
 
-http://app216.free.fr/wordpress/wp-content/uploads/capture-d%C3%A9cran2.png
+http://eude.googlecode.com/svn/wiki/log.png
