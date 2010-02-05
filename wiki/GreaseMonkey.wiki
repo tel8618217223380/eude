@@ -1,4 +1,6 @@
+#summary Script GreaseMonkey
 #labels Private
+
 ==Voici donc un script permettant d’envoyer automatiquement les informations de certaines page du jeu au Data Engine de votre choix.==
 
 ===Fonctionnalité:===
@@ -11,7 +13,7 @@
  * Modification du lien du support du jeu pour le nouveau.
  * Simple d’utilisation, il faut au préalable l’extension Grease Monkey pour Firefox.
  * Une fois celui ci installé, et Firefox redémarré.
- * Installer le script ‘eude‘ juste en cliquant dessus et validant l’install.
+ * Installer le script GreaseMokey juste en cliquant dessus et validant l’install.
 
 <table border=0>
 <tr>
@@ -20,9 +22,9 @@
 ====Pour configurer ce script (voir capture ci-contre):====
  * Dans le jeu cliquez sur Configuration puis Options
  * Vous verrez des options supplémentaire spécifique au Data Engine.
- * « Addresse » : Le lien vers votre installation du Data Engine.
- * « Nom d’utilisateur » : Le nom d’utilisateur utilisé sur le Data Engine.
- * « Mot de passe » : Le mot de passe utilisé sur le Data Engine (pas forcément le même que le jeu).
+ * *Adresse* : Le lien vers votre installation du Data Engine.
+ * *Nom d’utilisateur* : Le nom d’utilisateur utilisé sur le Data Engine.
+ * *Mot de passe* : Le mot de passe utilisé sur le Data Engine (pas forcément le même que le jeu).
  * Cliquez sur le bouton sauver pour valider le tout.
 </td></tr></table>
 Si les informations données sont correcte, le script s’active, et vous le signale.
