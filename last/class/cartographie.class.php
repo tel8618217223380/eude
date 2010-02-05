@@ -66,7 +66,7 @@ class cartographie {
      * @param integer $type (0,3,5,6)
      * @return boolean
      */
-    public function add_player($coords, $planete='', $nom='', $empire='', $note='', $type=0) {
+    public function add_player($coords, $planete='', $nom='', $empire='', $note=false, $type=0) {
         $result = $this->Messages();
         $updatetype=true;
 
@@ -116,8 +116,15 @@ class cartographie {
             $ligne = mysql_fetch_assoc($array);
             if($ligne['ID'] > 0) {
                 if (!$updatetype) $type = $ligne['TYPE'];
-                $query = sprintf('UPDATE SQL_PREFIX_Coordonnee SET `TYPE`=%d,`POSOUT`=\'\',`COORDETOUT`=\'\',`USER`=\'%s\',`EMPIRE`=\'%s\',`INFOS`=\'%s\',`UTILISATEUR`=\'%s\',`NOTE`=\'%s\''.
-                        ' WHERE ID=%s', $type, $qnom, $qempire, $qplanete, sqlesc($_SESSION['_login'], true), $qnote, $ligne['ID'] );
+                if ($note)
+                    $query = sprintf('UPDATE SQL_PREFIX_Coordonnee SET `TYPE`=%d,`POSOUT`=\'\',`COORDETOUT`=\'\',`USER`=\'%s\',`EMPIRE`=\'%s\','.
+                            '`INFOS`=\'%s\',`UTILISATEUR`=\'%s\',`NOTE`=\'%s\' WHERE ID=%s',
+                            $type, $qnom, $qempire, $qplanete, sqlesc($_SESSION['_login'], true), $qnote, $ligne['ID'] );
+                else
+                    $query = sprintf('UPDATE SQL_PREFIX_Coordonnee SET `TYPE`=%d,`POSOUT`=\'\',`COORDETOUT`=\'\',`USER`=\'%s\',`EMPIRE`=\'%s\','.
+                            '`INFOS`=\'%s\',`UTILISATEUR`=\'%s\', WHERE ID=%s',
+                            $type, $qnom, $qempire, $qplanete, sqlesc($_SESSION['_login'], true), $ligne['ID'] );
+
                 DataEngine::sql($query);
                 if (mysql_affected_rows() > 0) {
                     if (NO_SESSIONS)
