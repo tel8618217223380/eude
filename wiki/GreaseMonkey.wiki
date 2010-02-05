@@ -1,5 +1,4 @@
 #summary Script GreaseMonkey
-#labels Private
 
 ==Voici donc un script permettant d’envoyer automatiquement les informations de certaines page du jeu au Data Engine de votre choix.==
 
