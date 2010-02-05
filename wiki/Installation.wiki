@@ -2,9 +2,9 @@
 #labels Phase-Deploy,Featured
 = Installation =
 
- * Décompressez l’archive et placez tout les fichiers sur le ftp/dossier local.
- * Importer la base de donnée “INSTALL.sql” par phpmyadmin
- * Renommer le fichier “Entete.dist.php” en “Entete.php”
+ # Décompressez l’archive et placez tout les fichiers sur le ftp/dossier local.
+ # Importer la base de donnée “INSTALL.sql” par phpmyadmin
+ # Renommer le fichier “Entete.dist.php” en “Entete.php”
 
 Modifiez les valeurs suivante selon votre configuration (avec notepad++, gedit, kate ou mousepad):
 {{{
@@ -16,10 +16,10 @@ $BaseName  = "database";
 }}}
 
 La suite du fichier “Entete.php” est personnalisable selon vos envies.
- * Ouvrez la page web où vous avez installer le “Data Engine”
- * *Login*= admin
- * *Pass* = admin
- * Créer votre compte par le menu *Membres*.
- * Puis dans *Membres*/*Editions* mettez vous un accès _Super-Administrateur_.
- * Et supprimer le compte *admin*.
-La prise en compte des changements ce fait tout seul (vous serez déconnecté).
+ # Ouvrez la page web où vous avez installer le “Data Engine”
+ # *Login*= admin
+ # *Pass* = admin
+ # Créer votre compte par le menu *Membres*.
+ # Puis dans *Membres*/*Editions* mettez vous un accès _Super-Administrateur_.
+ # Et supprimer le compte *admin*.
+ La prise en compte des changements ce fait tout seul (vous serez déconnecté).
