@@ -666,6 +666,13 @@
 				$this->setBrowser(self::BROWSER_FIREFOX);
 				$retval = true;
 			}
+			if( preg_match('/Iceweasel/i',$this->_agent) ) {
+				$aresult = explode('/',stristr($this->_agent,'Iceweasel'));
+				$aversion = explode(' ',$aresult[1]);
+				$this->setVersion($aversion[0]);
+				$this->setBrowser(self::BROWSER_FIREFOX);
+				$retval = true;
+			}
 			return $retval;
 		}
 		
