@@ -1,7 +1,7 @@
 <?php
 /**
- * $Author: Alex10336 $
- * $Revision: 254 $
+ * $Author$
+ * $Revision$
  **/
 if (!SCRIPT_IN) die('Need by included');
 /*

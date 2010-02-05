@@ -1,7 +1,7 @@
 <?php
 /**
- * $Author: Alex10336 $
- * $Revision: 279 $
+ * $Author$
+ * $Revision$
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
  **/
 if (!defined('DE_INIT')) die('Init error');

@@ -3,7 +3,7 @@
  * Description of parserclass
  *
  * $Author alex$
- * $Revision: 254 $
+ * $Revision$
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
  * @since 1.4.1
  */

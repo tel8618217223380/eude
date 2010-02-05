@@ -1,7 +1,7 @@
 <?php
 /**
- * $Author: Alex10336 $
- * $Revision: 254 $
+ * $Author$
+ * $Revision$
  * @license http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
  * @since 1.4.1
  *
