@@ -2,9 +2,11 @@
 /**
  * Description of parserclass
  *
- * $Author alex$
- * $Revision$
- * @license http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
+ * @author Alex10336
+ * Dernière modification: $Id$
+ * @license GNU Public License 3.0 ( http://www.gnu.org/licenses/gpl-3.0.txt )
+ * @license Creative Commons 3.0 BY-SA ( http://creativecommons.org/licenses/by-sa/3.0/deed.fr )
+ *
  * @since 1.4.1
  */
 class parser {

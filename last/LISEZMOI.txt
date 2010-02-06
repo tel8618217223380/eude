@@ -9,8 +9,9 @@ Ce script n'est aucunement affilié à 'looki'.
 Il a été développé par le joueur Alex10336
 
 Certaines images utilisées sont la propriété de looki.fr.
-Tout le reste est sous license GPL-2 disponible a l'adresse ci-dessous
-http://www.gnu.org/licenses/gpl-2.0.html
+Tout le reste est sous license disponible ci-dessous
+- GNU Public License 3.0 ( http://www.gnu.org/licenses/gpl-3.0.txt )
+-Creative Commons 3.0 BY-SA ( http://creativecommons.org/licenses/by-sa/3.0/deed.fr )
 
 --------------------------------------------------------------------------------
 
