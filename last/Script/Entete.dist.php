@@ -60,6 +60,11 @@ final class Config implements iDataEngine_Config {
          * @staticvar SQL_PREFIX_ ''
          */
         define('SQL_PREFIX_','');
+
+        /**
+         * Quel pack de langue utiliser ?
+         */
+        define('LNG_CODE','fr');
     }
     /**
      * @return string Lien vers le forum

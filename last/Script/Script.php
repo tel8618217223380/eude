@@ -14,6 +14,7 @@ require_once(CLASS_PATH.'fb.php');				// Debug
 require_once(CLASS_PATH.'browser.class.php');
 require_once(CLASS_PATH.'output.class.php');
 require_once(CLASS_PATH.'addons.class.php');
+require_once(CLASS_PATH.'language.class.php');
 
 DataEngine::init();
 
@@ -23,7 +24,7 @@ if (CHECK_LOGIN) require_once(INCLUDE_PATH.'/login.php');
 if (date('w')==0) DataEngine::conf_cache('wormhole_cleaning');
 
 /// ### Mode debug, root admin & dev ONLY ###
-FB::setEnabled( IN_DEV && DataEngine::CheckPerms(AXX_ROOTADMIN));
+FB::setEnabled( !IS_IMG && IN_DEV && DataEngine::CheckPerms(AXX_ROOTADMIN));
 FB::info(DataEngine::$browser->getBrowser(),'Browser');
 
 function Get_IP() {
@@ -34,23 +35,6 @@ function Get_IP() {
     else
         return $_SERVER['REMOTE_ADDR'];
 }
-
-//function FormatId($id,&$idsys,&$iddet) {
-//    $tmppos = str_replace(":","-",$id);
-//    $tmppos = explode("-",$tmppos);
-//
-//    if (count($tmppos) != 4)
-//        return 'Erreur, le format de coordonnée doit-être xxxx-xx-xx-xx ou xxxx:xx:xx:xx';
-//    if ((!is_numeric($tmppos[0]) || !is_numeric($tmppos[1]) || !is_numeric($tmppos[2]) || !is_numeric($tmppos[3])))
-//        return 'Erreur, le format de coordonnée doit-être numérique au format xxxx-xx-xx-xx ou xxxx:xx:xx:xx';
-//
-//    if($erreur=="") {
-//        $idsys = $tmppos[0];
-//        $iddet = intval($tmppos[1])."-".intval($tmppos[2])."-".intval($tmppos[3]);
-//    }
-//
-//    return($erreur);
-//}
 
 function bulle ($texte,$addover='',$addout='') {
     if(is_array($addover))
