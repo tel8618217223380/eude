@@ -596,7 +596,7 @@ PERM;
 interface iDataEngine_Config {
     static public function DB_Connect();
     static public function init();
-    static public function perms();
+//    static public function perms();
     static public function GetForumLink();
     static public function GetDefaultGrade();
     static public function GetMyEmpire();
