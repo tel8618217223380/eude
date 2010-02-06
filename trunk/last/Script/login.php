@@ -16,6 +16,7 @@ if (isset($do_logout) && $do_logout) {
     $_SESSION['_login'] = $_SESSION['_pass'] = $_SESSION['_Perm'] = $_SESSION['_IP'] = '';
     output::Boink(ROOT_URL);
 }
+$lng = language::getinstance()->GetLngBlock('login');
 
 if (NO_SESSIONS) {
     $login = sqlesc(strtolower($_POST['user']));
@@ -43,10 +44,10 @@ if (NO_SESSIONS) {
         header('HTTP/1.1 403 Forbidden');
         $out = <<<o
 <eude>
-    <alert>Mot de passe ou nom d'utilisateur incorrect</alert>
+    <alert>{$lng['wronglogin']}</alert>
     <GM_active>0</GM_active>
     <logtype>raid</logtype>
-    <log>Identification au Data Engine échoué.</log>
+    <log>{$lng['wronglogin_log']}</log>
 </eude>
 o;
         output::_DoOutput($out);
@@ -77,7 +78,7 @@ if($_POST && !empty($_POST['login']) && !empty($_POST['mdp'])) {
         DataEngine::sql($query);
     } else { // login/pass pas bon...
         $validsession=-1;
-        $login_msg = "Mot de passe ou nom d'utilisateur incorrect";
+        $login_msg = $lng['wronglogin'];
         $query = "INSERT INTO SQL_PREFIX_Log (DATE,LOGIN,IP) VALUES(NOW(),'Err:$login','".Get_IP()."')";
         DataEngine::sql($query);
     }
@@ -104,7 +105,7 @@ if( ($validsession===false) && isset($_SESSION['_login']) && $_SESSION['_login']
 }
 
 // Message d'erreur par défaut...
-if ( $login_msg =='' && $validsession == -1 ) $login_msg = 'Session invalide !';
+if ( $login_msg =='' && $validsession == -1 ) $login_msg = $lng['session_lost'];
 
 if ( $validsession !== true && USE_AJAX ) {
     header('Content-Type: text/xml;charset=utf-8');
@@ -114,7 +115,7 @@ if ( $validsession !== true && USE_AJAX ) {
     echo '<session>';
     echo "<error><![CDATA[$login_msg]]></error>";
     // execution javascript si parsing xml
-    echo '<script><![CDATA[alert(\'Session perdue !\'); location.href=\'?\';]]></script>';
+    echo '<script><![CDATA[alert(\''.$lng['session_lost'].'\'); location.href=\'?\';]]></script>';
     echo '</session>';
     exit;
 }
@@ -130,7 +131,7 @@ if ( $validsession !== true && IS_IMG ) {
     $background_color = imagecolorallocate ($image, 0, 0, 0);
     imagefilledrectangle($image, 0, 0, $Taille, $Taille, $background_color);
     $debug_cl = imagecolorallocate ($image, 254, 254, 254);
-    map::map_debug('Session invalide !');
+    map::map_debug($lng['session_lost']);
     imagepng($image);
     imagedestroy($image);
     exit();
@@ -141,14 +142,14 @@ if ($validsession === true && $_SESSION['_Perm'] < AXX_VALIDATING) {
     $query = "INSERT INTO SQL_PREFIX_Log (DATE,LOGIN,IP) VALUES(NOW(),'AXX_VALIDATING:{$_SESSION['_login']}','{$_SESSION['_IP']}')";
     $_SESSION['_login'] = '';
     DataEngine::sql($query);
-    output::_DoOutput('<a href="'.GetForumLink().'"><p style="color:red">Vous n\'avez pas la permission d\'utilisation, Demander les acc&egrave;s a votre alliance</p></a>');
+    output::_DoOutput('<a href="'.GetForumLink().'"><p style="color:red">'.$lng['no_axx'].'</p></a>');
 }
 
 if ($validsession !==true) {
     require_once(TEMPLATE_PATH.'login.tpl.php');
 
     $tpl = tpl_login::getinstance();
-    $tpl->page_title = 'EU2: DataEngine, Identification';
+    $tpl->page_title = $lng['login_page_title'];
     $tpl->DoOutput($login_msg);
 
 }
