@@ -1,22 +1,21 @@
 var metadata = <><![CDATA[
 // ==UserScript==
-// @author         Alex10336
-// @name           Data Engine
-// @namespace      eude
-// @author Alex10336
-// @version 1.4.2
-// Dernière modification: $Id$
-// @license GNU Public License 3.0 ( http://www.gnu.org/licenses/gpl-3.0.txt )
-// @license Creative Commons 3.0 BY-SA ( http://creativecommons.org/licenses/by-sa/3.0/deed.fr )
-// @homepage       http://app216.free.fr/eu2/tracker
-// @description    Script de liaison entre firefox et un serveur Data Engine
-// @include        http://*eu2.looki.*/index.php
-// @include        http://*eu2.looki.*/galaxy/galaxy_overview.php*
-// @include        http://*eu2.looki.*/galaxy/galaxy_info.php*
-// @include        http://*eu2.looki.*/planet/planet_info.php*
-// @include        http://*eu2.looki.*/wormhole/wormhole_info.php*
-// @include        http://*eu2.looki.*/user/settings_overview.php?area=options
-// @exclude        http://vs.eu2.looki.*/*
+// @author       Alex10336
+// @name         Data Engine
+// @namespace    eude
+// @version      1.4.2
+// @lastmod      $Id$
+// @license      GNU Public License 3.0 ( http://www.gnu.org/licenses/gpl-3.0.txt )
+// @license      Creative Commons 3.0 BY-SA ( http://creativecommons.org/licenses/by-sa/3.0/deed.fr )
+// @homepage     http://app216.free.fr/eu2/tracker
+// @description  Script de liaison entre firefox et un serveur Data Engine
+// @include      http://*eu2.looki.*/index.php
+// @include      http://*eu2.looki.*/galaxy/galaxy_overview.php*
+// @include      http://*eu2.looki.*/galaxy/galaxy_info.php*
+// @include      http://*eu2.looki.*/planet/planet_info.php*
+// @include      http://*eu2.looki.*/wormhole/wormhole_info.php*
+// @include      http://*eu2.looki.*/user/settings_overview.php?area=options
+// @exclude      http://vs.eu2.looki.*/*
 // ==/UserScript==
 ]]></>;
 
@@ -27,10 +26,10 @@ var c_lang = c_host.substr(-3);
 c_lang = c_lang.substr(c_lang.indexOf('.')+1);
 var c_page = c_url.substr(7+c_host.length);
 var c_prefix = c_server+'.'+c_lang;
+metadata.search(/\@version\s+(\d+\.\d+\.\d+(\.\d+)?)/);
+var mversion=RegExp.$1.replace(/\.+/g, '');
 metadata.search(/\$Id\:\ eude\.user\.js\ (\d+)\ \d+\-\d+\-\d+\ .+\$/);
 var revision=RegExp.$1;
-metadata.search(/\@version (\d+\.\d+\.\d+(\.\d+)?)/);
-var mversion=RegExp.$1.replace(/\.+/g, '');
 var version=mversion+'r'+revision;
 const debug=false;
 
@@ -114,7 +113,7 @@ i18n['pl']['ress7']      = 'Krypton';
 i18n['pl']['ress8']      = 'Azot';
 i18n['pl']['ress9']      = 'Wodór';
 
-function md5(string) {
+var md5 = function (string) {
 
     function RotateLeft(lValue, iShiftBits) {
         return (lValue<<iShiftBits) | (lValue>>>(32-iShiftBits));
