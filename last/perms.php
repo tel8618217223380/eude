@@ -12,7 +12,10 @@ require_once(INCLUDE_PATH.'Script.php');
 DataEngine::CheckPermsOrDie(AXX_ROOTADMIN);
 DataEngine::conf_load();
 
-if (isset ($_POST['cxx'])) DataEngine::conf_update('perms', $_POST['cxx']);
+if (isset ($_POST['cxx'])) {
+    DataEngine::conf_update('perms', $_POST['cxx']);
+    output::Boink('%ROOT_URL%EAdmin.php');
+}
 
 $cxx_name = DataEngine::s_cperms();
 $axx_name = DataEngine::s_perms();

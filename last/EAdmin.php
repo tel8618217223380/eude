@@ -192,20 +192,17 @@ $tpl->cleaning_row('inactif', 'Suppression des éléments incatifs',
 if (is_array($cleaning)) $tpl->cleaning_msg($cleaning);
 $tpl->cleaning_footer();
 
-//$tpl->admin_user_header();
-//
-//	$mysql_result = DataEngine::sql("SELECT * from SQL_PREFIX_Users ORDER BY Permission DESC,Login");
-//	while ($ligne=mysql_fetch_array($mysql_result))
-//		$tpl->admin_user_row($ligne);
-
 $tpl->admin_footer();
 ///---
 
 ///---
 $tpl->log_header();
+if (Members::CheckPerms('MEMBRES_ADMIN_LOG')) {
 $mysql_result = DataEngine::sql("SELECT * from SQL_PREFIX_Log ORDER BY ID DESC LIMIT 40");
 while ($ligne=mysql_fetch_array($mysql_result))
     $tpl->log_row($ligne);
+} else
+    $tpl->log_row(array('DATE' => date('Y-m-d H:i:s'),'LOGIN' => '...', 'IP'=>'...'));
 $tpl->log_footer();
 ///---
 

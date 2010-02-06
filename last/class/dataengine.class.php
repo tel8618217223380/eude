@@ -505,7 +505,8 @@ class Members {
         $cxx['MEMBRES_NEWPASS'] = 'Changer pass';
         $cxx['MEMBRES_EDIT'] = 'Modification membre';
         $cxx['MEMBRES_NEW'] = 'Ajout membre (inclus les grades)';
-        $cxx['MEMBRES_ADMIN'] = 'Page Admin/permissions';
+        $cxx['MEMBRES_ADMIN_LOG'] = 'Log des connexions';
+        $cxx['MEMBRES_ADMIN'] = 'Page Admin';
         $cxx[] = 'Partie administrative';
 
         return array_reverse($cxx, true);
