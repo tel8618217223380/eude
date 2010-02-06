@@ -186,7 +186,6 @@ class DataEngine extends Members {
 
             // Initialisations particulières
             {
-
                 if (!isset(self::$settings['perms'])) self::Perms();
 
                 if (self::$conf_load['EmpireAllys'] &&
@@ -197,29 +196,29 @@ class DataEngine extends Members {
                         !isset(self::$settings['EmpireEnnemy']))
                     self::conf_add('EmpireEnnemy', '');
 
-                if (self::$conf_load['wormhole_cleaning'])
+                if (self::$conf_load['wormhole_cleaning']) {
                     if (!isset(self::$settings['wormhole_cleaning'])) {
                         self::conf_add('wormhole_cleaning',
                                 array('enabled' => false,
                                 'lastrun' => 0)
                         );
                     }
-                $wormhole_cleaning = self::$settings['wormhole_cleaning'];
-                if (date('w')==0 && $wormhole_cleaning['enabled']) {
-                    $runat = mktime(2, 10, 0, date("m"), date("d"), date("Y"));
-                    $now   = time();
-                    if ($now > $runat && $runat > $wormhole_cleaning['lastrun']) {
-                        self::sql('DELETE FROM SQL_PREFIX_Coordonnee WHERE `TYPE` = 1 AND `INACTIF` = 1');
-                        self::sql('UPDATE SQL_PREFIX_Coordonnee SET `INACTIF` = 1 WHERE `TYPE` = 1');
-                        self::sql('INSERT INTO SQL_PREFIX_Log (DATE,LOGIN,IP) VALUES(NOW(),\'vortex_reset_by:'.$_SESSION['_login'].'\' ,\''.Get_IP().'\')');
-                        $wormhole_cleaning['lastrun'] = $now;
-                        self::conf_update('wormhole_cleaning', $wormhole_cleaning);
-                        self::sql_do_spool(); // Mettre à jour maintenant, pas que deux membres le fasse a 1/2sec d'intervalle.
+                    $wormhole_cleaning = self::$settings['wormhole_cleaning'];
+                    if (date('w')==0 && $wormhole_cleaning['enabled']) {
+                        $runat = mktime(2, 10, 0, date("m"), date("d"), date("Y"));
+                        $now   = time();
+                        if ($now > $runat && $runat > $wormhole_cleaning['lastrun']) {
+                            self::sql('DELETE FROM SQL_PREFIX_Coordonnee WHERE `TYPE` = 1 AND `INACTIF` = 1');
+                            self::sql('UPDATE SQL_PREFIX_Coordonnee SET `INACTIF` = 1 WHERE `TYPE` = 1');
+                            self::sql('INSERT INTO SQL_PREFIX_Log (DATE,LOGIN,IP) VALUES(NOW(),\'vortex_reset_by:'.$_SESSION['_login'].'\' ,\''.Get_IP().'\')');
+                            $wormhole_cleaning['lastrun'] = $now;
+                            self::conf_update('wormhole_cleaning', $wormhole_cleaning);
+                            self::sql_do_spool(); // Mettre à jour maintenant, pas que deux membres le fasse a 1/2sec d'intervalle.
+                        }
                     }
                 }
             }
-        }
-        self::$conf_load=array();
+            self::$conf_load=array();
         }
         return self::$conf_loaded;
     }
@@ -541,7 +540,7 @@ class Members {
         if (isset($perms[$NeededAXX]))
             return $_SESSION['_Perm']>=$perms[$NeededAXX];
         else {
-            trigger_error($perms, 'CXX not found '.$NeededAXX.'. option disabled for all instead', E_WARNING);
+            trigger_error('CXX not found '.$NeededAXX.'. option disabled for all instead', E_USER_WARNING);
             return false;
         }
     }
@@ -599,10 +598,6 @@ interface iDataEngine_Config {
     static public function GetForumLink();
     static public function GetDefaultGrade();
     static public function GetMyEmpire();
-
-    // TODO remove me #176
-    static public function GetEmpireEnnemy();
-    static public function GetEmpireAllys();
 
     static public function GetMapColor($id);
     static public function Parcours_Max_Time();
