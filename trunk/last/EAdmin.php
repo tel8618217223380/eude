@@ -11,9 +11,11 @@ require_once(INCLUDE_PATH.'Script.php');
 
 // Mise en attente dans le cache de config.
 DataEngine::conf_cache('wormhole_cleaning');
+DataEngine::conf_cache('EmpireAllys');
+DataEngine::conf_cache('EmpireEnnemy');
 
 if (!Members::CheckPerms(AXX_ROOTADMIN) && !Members::CheckPerms('MEMBRES_ADMIN'))
- Members::NoPermsAndDie();
+    Members::NoPermsAndDie();
 
 if(isset($_POST['log'])) {
     $login = strtolower($_POST['log']);
@@ -121,6 +123,50 @@ if(isset($_POST['emp_allywars']) && $_POST['emp_allywars'] != '') {
 //        $emp_war = mysql_affected_rows();
 //    }
 //}
+if(isset($_POST['emp_war_add']) && $_POST['emp_war_add'] != '') {
+    $emp = sqlesc($_POST['emp']);
+    if ($emp != "") {
+        $wars = DataEngine::config('EmpireEnnemy');
+        if (!in_array(gpc_esc($_POST['emp']), $wars)) {
+            $mysql_result = DataEngine::sql("UPDATE SQL_PREFIX_Coordonnee SET TYPE=5 WHERE TYPE in (0,3,5) AND `EMPIRE` LIKE '{$emp}'");
+            $wars[] = gpc_esc($_POST['emp']);
+            DataEngine::conf_update('EmpireEnnemy', $wars);
+            output::Boink('?');
+        }
+    }
+}
+if(isset($_GET['emp_war_rm']) && $_GET['emp_war_rm'] != '') {
+    $wars = DataEngine::config('EmpireEnnemy');
+    $emp = sqlesc($wars[$_GET['emp_war_rm']]);
+    if ($emp != "") {
+            $mysql_result = DataEngine::sql("UPDATE SQL_PREFIX_Coordonnee SET TYPE=0 WHERE TYPE in (0,3,5) AND `EMPIRE` LIKE '{$emp}'");
+            unset ($wars[$_GET['emp_war_rm']]);
+            DataEngine::conf_update('EmpireEnnemy', $wars);
+            output::Boink('?');
+    }
+}
+if(isset($_POST['emp_allys_add']) && $_POST['emp_allys_add'] != '') {
+    $emp = sqlesc($_POST['emp']);
+    if ($emp != "") {
+        $allys = DataEngine::config('EmpireAllys');
+        if (!in_array(gpc_esc($_POST['emp']), $allys)) {
+            $mysql_result = DataEngine::sql("UPDATE SQL_PREFIX_Coordonnee SET TYPE=3 WHERE TYPE in (0,3,5) AND `EMPIRE` LIKE '{$emp}'");
+            $allys[] = gpc_esc($_POST['emp']);
+            DataEngine::conf_update('EmpireAllys', $allys);
+            output::Boink('?');
+        }
+    }
+}
+if(isset($_GET['emp_allys_rm']) && $_GET['emp_allys_rm'] != '') {
+    $allys = DataEngine::config('EmpireAllys');
+    $emp = sqlesc($allys[$_GET['emp_allys_rm']]);
+    if ($emp != "") {
+            $mysql_result = DataEngine::sql("UPDATE SQL_PREFIX_Coordonnee SET TYPE=0 WHERE TYPE in (0,3,5) AND `EMPIRE` LIKE '{$emp}'");
+            unset ($allys[$_GET['emp_allys_rm']]);
+            DataEngine::conf_update('EmpireAllys', $allys);
+            output::Boink('?');
+    }
+}
 
 ///---------------------------------------------------------------------------------------------------------------
 
@@ -159,7 +205,8 @@ while ($ligne=mysql_fetch_array($mysql_result)) {
     $empire[$cur_emp] = $shw_emp;
 }
 $tpl->empire_switch($empire, $emp_upd);
-$tpl->empire_wars($empire, $emp_war);
+$tpl->empire_allys($empire);
+$tpl->empire_wars($empire);
 
 
 $tpl->empire_allywars($allysnb, $warsnb);
@@ -203,9 +250,9 @@ $tpl->admin_footer();
 ///---
 $tpl->log_header();
 if (Members::CheckPerms('MEMBRES_ADMIN_LOG')) {
-$mysql_result = DataEngine::sql("SELECT * from SQL_PREFIX_Log ORDER BY ID DESC LIMIT 40");
-while ($ligne=mysql_fetch_array($mysql_result))
-    $tpl->log_row($ligne);
+    $mysql_result = DataEngine::sql("SELECT * from SQL_PREFIX_Log ORDER BY ID DESC LIMIT 40");
+    while ($ligne=mysql_fetch_array($mysql_result))
+        $tpl->log_row($ligne);
 } else
     $tpl->log_row(array('DATE' => date('Y-m-d H:i:s'),'LOGIN' => '...', 'IP'=>'...'));
 $tpl->log_footer();

@@ -283,13 +283,12 @@ upd;
 		$this->PushOutput($out);
 	}
 
-	public function empire_wars($empire_list,$emp_war) {
+	public function empire_wars($empire_list) {
 
 $out =<<<col1_r
 <form action="{$this->BASE_FILE}" method='post'>
 	<TR bgcolor="#AAAAAA">
-		<TD colspan=3>Déclaration de guerre à un empire: (Noms simplifiés)</TD>
-		<TD rowspan=3><input name='emp_war' type=submit value='Changer'></TD>
+		<TD colspan=4>Déclaration de guerre à un empire: (Noms simplifiés)</TD>
 	</TR>
 	<TR bgcolor="{$this->cols_cls[1]}">
 		<TD colspan=3 align=center>
@@ -302,23 +301,74 @@ col1_r;
 $out =<<<col2_r
 		</select>
 		</TD>
+                <td bgcolor="#AAAAAA"><input name='emp_war_add' type=submit value='Ajouter'></td>
 	</TR>
 	<TR bgcolor="{$this->cols_cls[0]}">
-		<TD colspan=3>
-			<input type=radio name="r_war" value="5" checked>Déclarer la guerre</input>
-			<input type=radio name="r_war" value="0">Déclarer la paix</input>
-		</TD>
+		<TD colspan=3><font color="red">
+col2_r;
+        $wars = DataEngine::config('EmpireEnnemy');
+        $nb = count($wars);
+            if (is_array($wars) && $nb>0) {
+                $i=0;
+                foreach ($wars as $key => $emp) {
+                    $i++;
+                    //DataEngine::utf_strip($emp);
+                    $out .= '<a href="?emp_war_rm='.$key.'">Enlever</a> &nbsp; &nbsp; '.$emp;
+                    if ($i<$nb) $out .='<br/>';
+                }
+            } else {
+                $out .= 'Pas de guerre en cours...';
+            }
+$out .=<<<col3_r
+		</font></TD>
+                <td bgcolor="#AAAAAA">&nbsp;</td>
 	</TR>
 </form>
-col2_r;
+col3_r;
+		$this->PushOutput($out);
+	}
 
-		if ($emp_war)
-$out .=<<<upd
-	<TR bgcolor="{$this->cols_cls[1]}">
-		<TD colspan=4>{$emp_war} joueurs modifié avec le nouveau status.</TD>
+	public function empire_allys($empire_list) {
+
+$out =<<<col1_r
+<form action="{$this->BASE_FILE}" method='post'>
+	<TR bgcolor="#AAAAAA">
+		<TD colspan=4>Déclaration d'alliance à un empire: (Noms simplifiés)</TD>
 	</TR>
-upd;
+	<TR bgcolor="{$this->cols_cls[1]}">
+		<TD colspan=3 align=center>
+		<select name='emp'>
+			<option name=''>[Selectionner un empire]</option>
+col1_r;
+		$this->PushOutput($out);
+		$this->SelectOptions($empire_list,-1);
 
+$out =<<<col2_r
+		</select>
+		</TD>
+                <td bgcolor="#AAAAAA"><input name='emp_allys_add' type=submit value='Ajouter'></td>
+	</TR>
+	<TR bgcolor="{$this->cols_cls[0]}">
+		<TD colspan=3><font color="darkgreen">
+col2_r;
+        $wars = DataEngine::config('EmpireAllys');
+        $nb = count($wars);
+            if (is_array($wars) && $nb>0) {
+                $i=0;
+                foreach ($wars as $key => $emp) {
+                    $i++;
+                    $out .= '<a href="?emp_allys_rm='.$key.'">Enlever</a> &nbsp; &nbsp; '.$emp;
+                    if ($i<$nb) $out .='<br/>';
+                }
+            } else {
+                $out .= 'Pas d\'alliance en cours...';
+            }
+$out .=<<<col3_r
+		</font></TD>
+                <td bgcolor="#AAAAAA">&nbsp;</td>
+	</TR>
+</form>
+col3_r;
 		$this->PushOutput($out);
 	}
 
@@ -327,7 +377,7 @@ upd;
 $out =<<<col1_r
 <form action="{$this->BASE_FILE}" method='post'>
 	<TR bgcolor="#AAAAAA">
-		<TD colspan=3>Forcer la mise à jour les information sur les alliés/guerres</TD>
+		<TD colspan=3>Forcer la mise à jour les information sur les alliés/guerres/neutre</TD>
 		<TD><input name='emp_allywars' type=submit value='MAJ'></TD>
 	</TR>
 col1_r;
