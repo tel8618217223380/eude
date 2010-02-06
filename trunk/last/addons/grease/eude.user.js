@@ -31,7 +31,7 @@ var mversion=RegExp.$1.replace(/\.+/g, '');
 metadata.search(/\$Id\:\ eude\.user\.js\ (\d+)\ \d+\-\d+\-\d+\ .+\$/);
 var revision=RegExp.$1;
 var version=mversion+'r'+revision;
-const debug=false;
+const debug=true;
 
 var c_game_lang = (unsafeWindow.top.sei_language != 'undefined') ? unsafeWindow.top.sei_language: c_lang;
 
@@ -94,6 +94,7 @@ i18n['de']['ress7']      = 'Krypton';
 i18n['de']['ress8']      = 'Stickstoff';
 i18n['de']['ress9']      = 'Wasserstoff';
 
+// [PL] translation by jhonny
 i18n['pl'] = Array();
 i18n['pl']['confheader'] = 'Opcje ustawienia do <u>Data Engine</u>';
 i18n['pl']['conflink']   = 'Strona';
