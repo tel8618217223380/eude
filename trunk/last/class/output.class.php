@@ -39,9 +39,15 @@ abstract class output {
      * Redirige vers une autre page
      * @param string $url
      */
-    static public function Boink($url='./') {
+    static public function Boink($data='./') {
         DataEngine::sql_log();
-        header('location: '.$url);
+        // Remplacement de variable...
+        $data = str_replace('%ROOT_URL%', ROOT_URL, $data);
+        $data = str_replace('%INCLUDE_URL%', INCLUDE_URL, $data);
+        $data = str_replace('%IMAGES_URL%', IMAGES_URL, $data);
+        $data = str_replace('%TEMPLATE_URL%', TEMPLATE_URL, $data);
+        $data = str_replace('%ADDONS_URL%', ADDONS_URL, $data);
+        header('location: '.$data);
         exit(0);
     }
     /**
