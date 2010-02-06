@@ -242,7 +242,7 @@ cleaning_msg;
 $out =<<<col1_r
 <form action="{$this->BASE_FILE}" method='post'>
 	<TR bgcolor="#AAAAAA">
-		<TD colspan=3>Changement de nom d'empire: (Noms simplifiés)</TD>
+		<TD colspan=3>Changement des nom d'empire: (Noms simplifiés)</TD>
 		<TD rowspan=3><input name='emp_upd' type=submit value='Changer'></TD>
 	</TR>
 	<TR bgcolor="{$this->cols_cls[1]}">
@@ -327,8 +327,8 @@ upd;
 $out =<<<col1_r
 <form action="{$this->BASE_FILE}" method='post'>
 	<TR bgcolor="#AAAAAA">
-		<TD colspan=3>Remettre à zéro les information sur les alliés/guerres</TD>
-		<TD><input name='emp_allywars' type=submit value='RAZ'></TD>
+		<TD colspan=3>Forcer la mise à jour les information sur les alliés/guerres</TD>
+		<TD><input name='emp_allywars' type=submit value='MAJ'></TD>
 	</TR>
 col1_r;
 
