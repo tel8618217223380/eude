@@ -17,7 +17,7 @@ final class Config implements iDataEngine_Config {
     /**
      * @var localhost Adresse du serveur
      */
-    static protected $BaseMysql = '%localhost%';
+    static protected $BaseMysql = 'localhost';
     /**
      * @var user Nom d'utilisateur pour le serveur mysql
      */
@@ -88,30 +88,6 @@ final class Config implements iDataEngine_Config {
      */
     static function GetMyEmpire() {
         return '%empire%';
-    }
-    /**
-     * Définir  ici le nom <b>exact</b> de(s) l'empire(s) ennemi
-     * @since 1.4.1
-     * @return array nom(s) de(s) l'empire(s) ennemi.
-     */
-    static function GetEmpireEnnemy() {
-        $listing = array();
-        $listing[] = '<ennemis>';
-        //$listing[] = '';
-
-        return $listing;
-    }
-    /**
-     * Définir  ici le nom <b>exact</b> de(s) l'empire(s) allié.
-     * @since 1.4.1
-     * @return array nom(s) de(s) l'empire(s) allié.
-     */
-    static function GetEmpireAllys() {
-        $listing = array();
-        $listing[] = '<alliés>';
-        //$listing[] = '';
-
-        return $listing;
     }
     /**
      * Temps max de recherche avant abandon pour le meilleurs recensé
