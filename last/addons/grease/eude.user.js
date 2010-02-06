@@ -4,7 +4,8 @@ var metadata = <><![CDATA[
 // @name           Data Engine
 // @namespace      eude
 // @author Alex10336
-// @ Dernière modification: $Id$
+// @version 1.4.2
+// Dernière modification: $Id$
 // @license GNU Public License 3.0 ( http://www.gnu.org/licenses/gpl-3.0.txt )
 // @license Creative Commons 3.0 BY-SA ( http://creativecommons.org/licenses/by-sa/3.0/deed.fr )
 // @homepage       http://app216.free.fr/eu2/tracker
@@ -26,9 +27,9 @@ var c_lang = c_host.substr(-3);
 c_lang = c_lang.substr(c_lang.indexOf('.')+1);
 var c_page = c_url.substr(7+c_host.length);
 var c_prefix = c_server+'.'+c_lang;
-metadata.search(/\s+(\d+\.\d+\.\d+)\s+\$\w+\:\ (\d+)\ \$/);
-// TODO upgrade regex
-var revision=RegExp.$2;
+metadata.search(/\$Id\:\ eude\.user\.js\ (\d+)\ \d+\-\d+\-\d+\ .+\$/);
+var revision=RegExp.$1;
+metadata.search(/\@version (\d+\.\d+\.\d+(\.\d+)?)/);
 var mversion=RegExp.$1.replace(/\.+/g, '');
 var version=mversion+'r'+revision;
 const debug=false;
