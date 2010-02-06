@@ -312,7 +312,7 @@ col2_r;
                 $i=0;
                 foreach ($wars as $key => $emp) {
                     $i++;
-                    //DataEngine::utf_strip($emp);
+                    $emp = DataEngine::utf_strip($emp);
                     $out .= '<a href="?emp_war_rm='.$key.'">Enlever</a> &nbsp; &nbsp; '.$emp;
                     if ($i<$nb) $out .='<br/>';
                 }
@@ -357,6 +357,7 @@ col2_r;
                 $i=0;
                 foreach ($wars as $key => $emp) {
                     $i++;
+                    $emp = DataEngine::utf_strip($emp);
                     $out .= '<a href="?emp_allys_rm='.$key.'">Enlever</a> &nbsp; &nbsp; '.$emp;
                     if ($i<$nb) $out .='<br/>';
                 }
