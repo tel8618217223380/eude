@@ -8,6 +8,9 @@
  * @since 1.4.1
  *
  **/
+DataEngine::conf_cache('EmpireAllys');
+DataEngine::conf_cache('EmpireEnnemy');
+
 class cartographie {
     static protected $instance;
     private $nbmsg;
