@@ -1,9 +1,10 @@
 <?php
 /**
- * $Author$
- * $HeadURL$
- * $Revision$
- * @license http://www.gnu.org/licenses/gpl-2.0.html GNU Public License
+ * @author Alex10336
+ * Dernière modification: $Id$
+ * @license GNU Public License 3.0 ( http://www.gnu.org/licenses/gpl-3.0.txt )
+ * @license Creative Commons 3.0 BY-SA ( http://creativecommons.org/licenses/by-sa/3.0/deed.fr )
+ *
  **/
 
 // Si le temps serveur correspond pas a celui du jeu, la liste:
@@ -116,5 +117,7 @@ function my_error_handler( $errno, $errstr, $errfile, $errline ) {
 
 set_error_handler('my_error_handler');
 
-// find ./ -name "*.php" | xargs -t svn ps "svn:keywords" "Author Revision"
+// find ./ -name "*.php" | xargs -t svn ps "svn:keywords" "Id"
+// find ./ -name "*.js" | xargs -t svn ps "svn:keywords" "Id"
+// find ./ -name "*.css" | xargs -t svn ps "svn:keywords" "Id"
 // svn ci
