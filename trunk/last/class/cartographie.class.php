@@ -124,7 +124,7 @@ class cartographie {
                             $type, $qnom, $qempire, $qplanete, sqlesc($_SESSION['_login'], true), $qnote, $ligne['ID'] );
                 else
                     $query = sprintf('UPDATE SQL_PREFIX_Coordonnee SET `TYPE`=%d,`POSOUT`=\'\',`COORDETOUT`=\'\',`USER`=\'%s\',`EMPIRE`=\'%s\','.
-                            '`INFOS`=\'%s\',`UTILISATEUR`=\'%s\', WHERE ID=%s',
+                            '`INFOS`=\'%s\',`UTILISATEUR`=\'%s\' WHERE ID=%s',
                             $type, $qnom, $qempire, $qplanete, sqlesc($_SESSION['_login'], true), $ligne['ID'] );
 
                 DataEngine::sql($query);

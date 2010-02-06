@@ -159,8 +159,13 @@ while ($ligne=mysql_fetch_array($mysql_result)) {
     $empire[$cur_emp] = $shw_emp;
 }
 $tpl->empire_switch($empire, $emp_upd);
+$tpl->empire_wars($empire, $emp_war);
+
+
 $tpl->empire_allywars($allysnb, $warsnb);
 //$tpl->empire_wars($empire, $emp_war);
+//
+
 //---
 $dates = array();
 $dates["[Aucun changement]"]		= "-1";
