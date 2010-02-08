@@ -19,7 +19,6 @@ if (isset ($_POST['cxx'])) {
 
 $cxx_name = DataEngine::s_cperms();
 $axx_name = DataEngine::s_perms();
-$axx_name[AXX_DISABLED] = "Désactivé";
 $cxx_conf = DataEngine::config('perms');
 $axx_num  = count($axx_name);
 

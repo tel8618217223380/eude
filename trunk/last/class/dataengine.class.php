@@ -42,7 +42,7 @@ class DataEngine extends Members {
             require_once(INCLUDE_PATH.'Entete.php');
 
         if (!class_exists('Config'))
-            self::ErrorAndDie('Fichier entete.php non valide (voir entete.dist.php)...',false);
+            self::ErrorAndDie('Invalid file "entete.php" (see entete.dist.php)...',false);
 
         Config::init();
         Config::DB_Connect();
@@ -348,44 +348,45 @@ ead;
     }
 
     static public function a_ressources() {
+        $lng = language::getinstance()->GetLngBlock('dataengine');
         $i = 0;
-        $Ressource[$i]['Nom'] = 'Titane';
+        $Ressource[$i]['Nom']   = $lng['Titane'];
         $Ressource[$i]['Field'] = 'Titane';
         $Ressource[$i]['Image'] = IMAGES_URL.'Titane.png';
         $i++;
-        $Ressource[$i]['Nom'] = 'Cuivre';
+        $Ressource[$i]['Nom']   = $lng['Cuivre'];
         $Ressource[$i]['Field'] = 'Cuivre';
         $Ressource[$i]['Image'] = IMAGES_URL.'Cuivre.png';
         $i++;
-        $Ressource[$i]['Nom'] = 'Fer';
+        $Ressource[$i]['Nom']   = $lng['Fer'];
         $Ressource[$i]['Field'] = 'Fer';
         $Ressource[$i]['Image'] = IMAGES_URL.'Fer.png';
         $i++;
-        $Ressource[$i]['Nom'] = 'Aluminium';
+        $Ressource[$i]['Nom']   = $lng['Aluminium'];
         $Ressource[$i]['Field'] = 'Aluminium';
         $Ressource[$i]['Image'] = IMAGES_URL.'Aluminium.png';
         $i++;
-        $Ressource[$i]['Nom'] = 'Mercure';
+        $Ressource[$i]['Nom']   = $lng['Mercure'];
         $Ressource[$i]['Field'] = 'Mercure';
         $Ressource[$i]['Image'] = IMAGES_URL.'Mercure.png';
         $i++;
-        $Ressource[$i]['Nom'] = 'Silicium';
+        $Ressource[$i]['Nom']   = $lng['Silicium'];
         $Ressource[$i]['Field'] = 'Silicium';
         $Ressource[$i]['Image'] = IMAGES_URL.'Silicium.png';
         $i++;
-        $Ressource[$i]['Nom'] = 'Uranium';
+        $Ressource[$i]['Nom']   = $lng['Uranium'];
         $Ressource[$i]['Field'] = 'Uranium';
         $Ressource[$i]['Image'] = IMAGES_URL.'Uranium.png';
         $i++;
-        $Ressource[$i]['Nom'] = 'Krypton';
+        $Ressource[$i]['Nom']   = $lng['Krypton'];
         $Ressource[$i]['Field'] = 'Krypton';
         $Ressource[$i]['Image'] = IMAGES_URL.'Krypton.png';
         $i++;
-        $Ressource[$i]['Nom'] = 'Azote';
+        $Ressource[$i]['Nom']   = $lng['Azote'];
         $Ressource[$i]['Field'] = 'Azote';
         $Ressource[$i]['Image'] = IMAGES_URL.'Azote.png';
         $i++;
-        $Ressource[$i]['Nom'] = 'Hydrog&egrave;ne';
+        $Ressource[$i]['Nom']   = $lng['Hydrogene'];
         $Ressource[$i]['Field'] = 'Hydrogene';
         $Ressource[$i]['Image'] = IMAGES_URL.'Hydrogene.png';
         return $Ressource;
@@ -456,16 +457,8 @@ class Members {
     }
 
     static public function s_perms() {
-        return array(
-                AXX_VALIDATING	=>'Non-validé',
-                AXX_GUEST	=>'Invité',
-                AXX_MEMBER	=>'Membre',
-                AXX_POWERMEMBER	=>'Membre+',
-                AXX_MODO	=>'Modérateur',
-                AXX_SUPMODO	=>'Super-Modérateur',
-                AXX_ADMIN	=>'Administrateur',
-                AXX_ROOTADMIN	=>'Super-Administrateur'
-        );
+        $axx = language::getinstance()->GetLngBlock('dataengine');
+        return $axx['axx'];
     }
 
     /**
@@ -474,42 +467,16 @@ class Members {
      */
     static public function s_cperms() {
 
-        // Listing a l'envers ;)
+        $cxx = array();
         // si clé numérique => séparateur nominatif.
-        $cxx=addons::getinstance()->CustomPerms();
-        $cxx[] = 'Addons:';
+        $tmp = language::getinstance()->GetLngBlock('dataengine');
+        foreach($tmp['cxx'] as $k => $v) $cxx[$k] = $v;
 
-        $cxx['CARTOGRAPHIE_GREASE'] = 'Utilisation "eude"';
-        $cxx['CARTOGRAPHIE_SEARCH'] = 'Fonction recherche';
-        $cxx['CARTOGRAPHIE_PLAYERS'] = 'Ajout Joueur/Flottes PNJ';
-        $cxx['CARTOGRAPHIE_PLANETS'] = 'Ajout planètes';
-        $cxx['CARTOGRAPHIE_ASTEROID'] = 'Ajout Astéroïdes';
-        $cxx['CARTOGRAPHIE'] = 'Page Cartographie';
-        $cxx[] = 'Cartographie';
+        $tmp=addons::getinstance()->CustomPerms();
+        foreach($tmp as $k => $v) $cxx[$k] = $v;
 
-        $cxx['CARTE_SHOWEMPIRE'] = 'Affichage des Joueurs de l\'empire';
-        $cxx['CARTE_JOUEUR'] = 'Affichage des Joueurs';
-        $cxx['CARTE_SEARCH'] = 'Recherche';
-        $cxx['CARTE'] = 'Page Carte';
-        $cxx[] = 'Carte';
-
-        $cxx['PERSO_OWNUNIVERSE'] = 'Page production';
-        $cxx['PERSO_RESEARCH'] = 'Page recherche';
-        $cxx['PERSO'] = 'Page Mafiche';
-        $cxx[] = 'Ma fiche & co';
-
-
-        $cxx['MEMBRES_HIERARCHIE'] = 'Membres hiérarchie';
-        $cxx['MEMBRES_STATS'] = 'Affichage stats';
-        $cxx['MEMBRES_DELETE'] = 'Supprimer membre';
-        $cxx['MEMBRES_NEWPASS'] = 'Changer pass';
-        $cxx['MEMBRES_EDIT'] = 'Modification membre';
-        $cxx['MEMBRES_NEW'] = 'Ajout membre (inclus les grades)';
-        $cxx['MEMBRES_ADMIN_LOG'] = 'Log des connexions';
-        $cxx['MEMBRES_ADMIN'] = 'Page Admin';
-        $cxx[] = 'Partie administrative';
-
-        return array_reverse($cxx, true);
+        return $cxx;
+        ;
     }
     /**
      * @return AXX_*
@@ -552,13 +519,15 @@ class Members {
      */
     static public function CheckPermsOrDie($NeededAXX=AXX_MEMBER) {
         if (!self::CheckPerms($NeededAXX)) {
+            $lng = language::getinstance()->GetLngBlock('dataengine');
             $perm = self::s_perms();
+            $str = sprintf($lng['minimalpermsneeded'], $perm[$NeededAXX]);
             $out = <<<PERM
 <br/><br/>
 	<center>
 		<a href='%ROOT_URL%'>
 		<font color=red><i>
-			Permission minimale manquante (<b>{$perm[$NeededAXX]}</b> ou supérieur)
+			{$str}
 		</i></font></a>
 	</center>
 PERM;
@@ -566,7 +535,8 @@ PERM;
         }
     }
     static public function NoPermsAndDie() {
-        DataEngine::ErrorAndDie('Permission minimale manquante ou option désactivée.');
+        $lng = language::getinstance()->GetLngBlock('dataengine');
+        DataEngine::ErrorAndDie($lng['nopermsanddie']);
     }
     /**
      * Supprimer un joueur ?
