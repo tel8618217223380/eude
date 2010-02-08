@@ -1,16 +1,13 @@
 #summary Installation
 #labels Phase-Deploy,Featured
-<<<<<<< .mine
-=== Installation ===
-=======
-= Pré-requis =
+
+=== Pré-requis ===
 
 Il vous faut un hébergeur avec php5+ et mysql 5+<br>
 La plupart seront compatible ([http://app216.free.fr/eu2/tracker/news_view_page.php?news_id=2 liste])<br>
 Si vous avez déjà ces pré-requis, passez a la partie *Installation*.
 
-= Installation =
->>>>>>> .r43
+=== Installation ===
 
  # Décompressez l’archive et placez tout les fichiers sur le ftp/dossier local.
  # [http://www.siteduzero.com/tutoriel-3-14496-phpmyadmin.html#ss_part_3 Importer] la base de donnée “INSTALL.sql” par phpmyadmin
