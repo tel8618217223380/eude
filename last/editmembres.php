@@ -138,10 +138,11 @@ if ($_GET['Joueur'] != '') {
 }
 
 $axx = array();
-foreach (DataEngine::s_perms() as $k => $v)
+foreach (DataEngine::s_perms() as $k => $v) {
+    if ($k == AXX_DISABLED) continue;
     if (DataEngine::CurrentPerms() > $k || DataEngine::CurrentPerms() == AXX_ROOTADMIN)
         $axx[$k] = $v;
-
+}
 require_once(TEMPLATE_PATH.'editmembres.tpl.php');
 $tpl = tpl_editmembres::getinstance();
 $tpl->page_title = 'EU2: Membres (Éditions)';
