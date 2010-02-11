@@ -9,8 +9,8 @@ Si vous avez déjà ces pré-requis, passez a la partie *Installation*.
 
 === Installation ===
 
- # Décompressez l’archive et placez tout les fichiers sur le ftp/dossier local.
- # [http://www.siteduzero.com/tutoriel-3-14496-phpmyadmin.html#ss_part_3 Importer] la base de donnée “INSTALL.sql” par phpmyadmin
+ # Décompressez l’archive.
+ # [http://www.siteduzero.com/tutoriel-3-14496-phpmyadmin.html#ss_part_3 Importer] la base de donnée “INSTALL.sql” par phpmyadmin.
  # Renommer le fichier “Entete.dist.php” en “Entete.php”
 
 Modifiez les valeurs suivante selon votre configuration (avec notepad++, gedit, kate ou mousepad):
@@ -23,6 +23,7 @@ $BaseName  = "database";
 }}}
 
 La suite du fichier “Entete.php” est personnalisable selon vos envies.
+ # Placez tout les fichiers sur le ftp.
  # Ouvrez la page web où vous avez installer le “Data Engine”
  # *Login*= admin
  # *Pass* = admin
