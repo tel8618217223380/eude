@@ -37,7 +37,7 @@ class tpl_menu {
         array('%ROOT_URL%ownuniverse.php','%IMAGES_URL%Btn-Production.png','DataEngine::CheckPerms(CXX_PERSO_OWNUNIVERSE)'),
         ),
         ),
-        'addon' => array('', '%IMAGE_URL%btn-addon.png',180, 'addons::getinstance()->IncludeAddonMenu()', array() ),
+        'addon' => array('', '%IMAGES_URL%btn-addon.png',180, 'addons::getinstance()->IncludeAddonMenu()', array() ),
         'admin' => array('%ROOT_URL%Membres.php','%IMAGES_URL%Btn-Membres.png',180,'DataEngine::CheckPerms(CXX_MEMBRES_HIERARCHIE)', array(
         array('%ROOT_URL%Membres.php','%IMAGES_URL%btn-hierarchie.png','DataEngine::CheckPerms(CXX_MEMBRES_HIERARCHIE)'),
         array('%ROOT_URL%editmembres.php','%IMAGES_URL%btn-editions.png','DataEngine::CheckPerms(CXX_MEMBRES_EDIT)'),
