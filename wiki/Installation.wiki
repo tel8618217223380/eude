@@ -9,7 +9,8 @@ Si vous avez déjà ces pré-requis, passez a la partie *Installation*.
 
 === Installation ===
 
- # Décompressez l’archive.
+ # Décompressez l'archive.
+ # Mettez tous les fichiers sur le ftp de votre hébergeur.
  # [http://www.siteduzero.com/tutoriel-3-14496-phpmyadmin.html#ss_part_3 Importer] la base de donnée “INSTALL.sql” par phpmyadmin.
  # Renommer le fichier “Entete.dist.php” en “Entete.php”
 
