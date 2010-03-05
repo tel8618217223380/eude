@@ -1,5 +1,5 @@
 #summary sidebar
 
   * [Installation Installation]
-  * [freefr Cas pages free.fr]
+    * [freefr Cas pages free.fr]
   * [GreaseMonkey Script GreaseMonkey]
