@@ -5,11 +5,11 @@
 Par défaut free.fr propose php4.
 Pour Passer à php5, créer un fichier “.htaccess” à la racine du ftp et mettez dedans:
 
-<code language=htaccess>
+{{{
 <IfDefine Free>
 php 1
 </IfDefine>
-</code>
+}}}
 
 === Erreur de sessions ===
 
