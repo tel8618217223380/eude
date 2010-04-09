@@ -32,3 +32,8 @@ La suite du fichier “Entete.php” est personnalisable selon vos envies.
  # Puis dans *Membres*/*Editions* mettez vous un accès _Super-Administrateur_.
  # Et supprimer le compte *admin*.
  La prise en compte des changements ce fait tout seul (vous serez déconnecté).
+
+=== Cas particulier ===
+
+ * [freefr Pages free.fr]
+ * [http://guide.ovh.com/Php5ChezOvh Chez OVH] (en php4 par défaut)
