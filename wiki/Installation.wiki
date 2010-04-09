@@ -36,4 +36,4 @@ La suite du fichier “Entete.php” est personnalisable selon vos envies.
 === Cas particulier ===
 
  * [freefr Pages free.fr]
- * [http://guide.ovh.com/Php5ChezOvh Chez OVH] (en php4 par défaut)
+ * [http://guide.ovh.com/Php5ChezOvh Chez OVH] (en php4 par défaut, issue 51)
