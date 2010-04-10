@@ -12,7 +12,7 @@
  * Modification du lien du support du jeu pour le nouveau.
  * Simple d’utilisation, il faut au préalable l’extension Grease Monkey pour Firefox.
  * Une fois celui ci installé, et Firefox redémarré.
- * Installer le [http://app216.free.fr/eu2/eude.user.js script GreaseMonkey] juste en cliquant dessus et validant l’install.
+ * Installer le [http://app216.free.fr/eu2/eude.1411r265e.user.js script GreaseMonkey] juste en cliquant dessus et validant l’install.
 
 <table border=0>
 <tr>
