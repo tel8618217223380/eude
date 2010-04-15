@@ -3,7 +3,7 @@
 
 = Installation =
 
- * Installation
+ * [Installation Installation]
 
 = Mise à jour =
 
