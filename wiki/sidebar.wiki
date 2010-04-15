@@ -2,4 +2,6 @@
 
   * [Installation Installation]
     * [freefr Cas pages free.fr]
+  * Mise à jour
+    * [maj141 1.4.1]
   * [GreaseMonkey Script GreaseMonkey]
