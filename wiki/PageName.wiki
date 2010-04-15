@@ -1,0 +1,33 @@
+#summary Mise à jour depuis la version 1.4.1
+#labels Phase-Implementation
+
+= Installation =
+
+ * Installation
+
+= Mise à jour =
+
+ #  Écrasez tout les fichiers par les nouveaux
+ # Supprimer le fichier '/Script/update.php' (obsolète)
+ # Dans PhpMyAdmin importer le fichier UPGRADE.sql.
+
+
+= Infos sur cette version =
+
+== Nouveauté:==
+ * Prise en charge d'un script GreaseMonkey (#162)
+ * Nettoyage automatique des vortex en option (#115)
+ * Droits d'accès modifiable directement par la page admin (#169)
+ * Empires Alliés/Ennemis modifiable directement par la page admin (#176)
+ * Accès en lecture seule de la page de production des autres joueurs pour les admins (#215)
+
+==Modification:==
+ * Maj du parseur de ownuniverse (#180, merci looki...)
+==Correctifs:==
+ * #183 Bug avec la bulle de la carte
+ * #116 Prise en charge de Iceweasel (Firefox 100% libre)
+ * #192 Orthographe de la race 'Jamozoïde'
+ * #216 Léger problème de couleur de carte
+ * #217 Affichage de l'image 'addons'.
+ * #228 Gestion des dates revues.
+ * #198 Champ NOTES
