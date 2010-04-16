@@ -8,7 +8,8 @@
 = Mise à jour =
 
  #  Écrasez tout les fichiers par les nouveaux
- # Supprimer le fichier '/Script/update.php' (obsolète)
+ # Supprimer le fichier '/tpl/index.tpl.php' (obsolète)
+ # Mettez à jour le fichier '/Script/Script.php'
  # Dans PhpMyAdmin importer le fichier UPGRADE.sql.
 
 
