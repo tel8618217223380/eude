@@ -1,15 +1,15 @@
 #summary Mise à jour depuis la version 1.4.1
-#labels Phase-Implementation
+#labels Phase-Deploy
 
 = Installation =
 
- * [Installation Installation]
+ * Voir la page [Installation Installation] dédié.
 
 = Mise à jour =
 
  #  Écrasez tout les fichiers par les nouveaux
- # Supprimer le fichier '/tpl/index.tpl.php' (obsolète)
- # Mettez à jour le fichier '/Script/Script.php'
+ # Supprimer le fichier '_/tpl/index.tpl.php_' (obsolète)
+ # Mettez à jour le fichier '_/Script/Entete.php_'
  # Dans PhpMyAdmin importer le fichier UPGRADE.sql.
 
 
