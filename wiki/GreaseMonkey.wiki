@@ -5,7 +5,6 @@
 
 ===Fonctionnalité:===
  * Listing rapide des astres à chaque visite d’un Système Solaire,
- * Scan de SS,
  * Ajout des vortex,
  * Ajout des astéroïdes,
  * Ajout des planètes colonisable,
