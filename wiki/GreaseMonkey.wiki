@@ -1,4 +1,5 @@
 #summary Script GreaseMonkey
+#labels Featured
 
 ==Voici donc un script permettant d’envoyer automatiquement les informations de certaines page du jeu au Data Engine de votre choix.==
 
@@ -9,7 +10,6 @@
  * Ajout des astéroïdes,
  * Ajout des planètes colonisable,
  * Désactivation du chat par défaut (cliquer dessus le lance),
- * Modification du lien du support du jeu pour le nouveau.
  * Simple d’utilisation, il faut au préalable l’extension Grease Monkey pour Firefox.
  * Une fois celui ci installé, et Firefox redémarré.
  * Installer le [http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.150.user.js script GreaseMonkey] juste en cliquant dessus et validant l’install.
