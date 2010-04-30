@@ -39,3 +39,7 @@
  * Issue 31: Rectification de l'image des alliés sur cartedetails.php
  * Issue 27: Modification des requêtes pour un serveur Mysql 5.1.x
  * Issue 24: Orthographe de la race 'Weganien'
+
+==Bugs connus:==
+
+ * issue 96 bug GreaseMonkey & flotte pnj
