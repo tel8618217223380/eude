@@ -42,4 +42,4 @@
 
 ==Bugs connus:==
 
- * issue 96 bug GreaseMonkey & flotte pnj
+ * issue 96 Flotte pnj

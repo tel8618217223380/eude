@@ -1,0 +1,29 @@
+#summary Mise à jour depuis la version 1.4.2
+#labels Phase-Deploy
+
+= Installation =
+
+ * Voir la page [Installation Installation] dédié.
+
+= Mise à jour =
+
+ # Écrasez tout les fichiers par les nouveaux
+ # Supprimer le fichier '' (obsolète)
+ # Mettez à jour le fichier '_/Script/Entete.php_'
+ # Dans PhpMyAdmin importer le fichier UPGRADE.sql.
+
+
+= Infos sur cette version =
+
+== Nouveauté:==
+
+==Modification:==
+ * issue 72: log dernière modif membre passé a dernière connexion
+ * issue 72: suppresion du champ "Don"
+ * issue 70: css revue de la tête aux pieds
+ * issue 93: Date des éléments de la page cartographie remise dans le tableau
+ * issue 97: Tri par date de nouveau possible sur la page cartographie
+==Correctifs:==
+ * issue 96: Flotte pnj
+
+==Bugs connus:==
