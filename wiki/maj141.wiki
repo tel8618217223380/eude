@@ -42,4 +42,4 @@
 
 ==Bugs connus:==
 
- * issue 96 Flotte pnj
+ * issue 96 Flotte pnj ([http://code.google.com/p/eude/downloads/detail?name=eude-patch-1.4.2.1.tar.gz patch 1.4.2.1])
