@@ -16,7 +16,7 @@ Si vous avez déjà ces pré-requis, passez a la partie *Installation*.
 
 Modifiez les valeurs suivante selon votre configuration:
 
-*Avec notepad++, gedit, kate ou mousepad*, et surtout pas le bloc-note ou word.
+*Avec [http://code.google.com/p/eude/issues/detail?id=123#c3 notepad++], gedit, kate ou mousepad*, et surtout pas le bloc-note ou word.
 {{{
 // Définition des variables globale utilisé par le système
 $BaseMysql = "localhost";
