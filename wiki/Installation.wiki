@@ -14,9 +14,8 @@ Si vous avez déjà ces pré-requis, passez a la partie *Installation*.
  # [phpMyAdmin Importer] la base de donnée “INSTALL.sql” par phpmyadmin.
  # Renommer le fichier “Entete.dist.php” en “Entete.php”
 
-Modifiez les valeurs suivante selon votre configuration:
+Modifiez les valeurs suivante selon votre configuration (voir éditeurs plus bas):
 
-*Avec [http://code.google.com/p/eude/issues/detail?id=123#c3 notepad++], gedit, kate ou mousepad*, et surtout pas le bloc-note ou word.
 {{{
 // Définition des variables globale utilisé par le système
 $BaseMysql = "localhost";
@@ -39,3 +38,10 @@ La suite du fichier “Entete.php” est personnalisable selon vos envies.
 
  * [freefr Pages free.fr]
  * [http://guide.ovh.com/Php5ChezOvh Chez OVH] (en php4 par défaut, issue 51)
+
+==== Éditeurs ====
+ * <u>Windows</u>: notepad++, netbeans (surtout pas le bloc-note ou word)
+ * <u>Linux</u>: gedit, kate, mousepad ou netbeans
+ * <u>MAC</u>: ?? , netbeans
+
+Pour *notepad++*, enregistrez en *UTF-8 sans BOM*
