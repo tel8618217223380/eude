@@ -16,7 +16,8 @@
 = Infos sur cette version =
 
 == Nouveauté:==
- * issue 32: Ajout du support ownuniverse/mafiche a GreaseMonkey
+ * issue 33: Ajout du support ownuniverse/mafiche à GreaseMonkey
+ * issue 49: Calcul de parcours sans déplacement par impulsion
 
 ==Modification:==
  * issue 72: log dernière modif membre passé a dernière connexion
