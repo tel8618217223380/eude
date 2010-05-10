@@ -10,7 +10,7 @@
  # Écrasez tout les fichiers par les nouveaux
  # Supprimer le fichier '' (obsolète)
  # Mettez à jour le fichier '_/Script/Entete.php_'
- # Dans phpMyAdmin importer le fichier UPGRADE.sql.
+ # Dans [phpMyAdmin] importer le fichier UPGRADE.sql.
 
 
 = Infos sur cette version =

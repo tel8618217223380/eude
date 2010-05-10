@@ -11,7 +11,7 @@
  #  Écrasez tout les fichiers par les nouveaux
  # Supprimer le fichier '_/tpl/index.tpl.php_' (obsolète)
  # Mettez à jour le fichier '_/Script/Entete.php_'
- # Dans phpMyAdmin importer le fichier UPGRADE.sql.
+ # Dans [phpMyAdmin] importer le fichier UPGRADE.sql.
 
 
 = Infos sur cette version =
