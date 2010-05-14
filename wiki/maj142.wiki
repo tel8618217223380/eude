@@ -25,6 +25,7 @@
  * issue 70: css revue de la tête aux pieds
  * issue 93: Date des éléments de la page cartographie remise dans le tableau
  * issue 97: Tri par date de nouveau possible sur la page cartographie
+ * issue 98: Détailler l'alerte de suppression sur la page editmembre
 ==Correctifs:==
  * issue 96: Flotte pnj
 

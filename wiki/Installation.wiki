@@ -45,3 +45,4 @@ La suite du fichier “Entete.php” est personnalisable selon vos envies.
  * <u>MAC</u>: ?? , netbeans
 
 Pour *notepad++*, enregistrez en *UTF-8 sans BOM*
+http://eude.googlecode.com/svn/wiki/notepad_encoder_utf-8.jpg

@@ -1,6 +1,6 @@
-#summary Importation du fichier d'installation dans phpMyAdmin
+#summary Importation du fichier d'installation/mise à jour dans phpMyAdmin
 
-= Importation du fichier d'installation =
+= Importation du fichier d'installation/mise à jour =
 
 Identifiez vous sur le phpMyAdmin de votre hébergeur
 
