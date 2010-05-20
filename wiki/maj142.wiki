@@ -7,10 +7,10 @@
 
 = Mise à jour =
  #  Télécharger la version [1.4.x]
- # Écrasez tout les fichiers par les nouveaux
- # Supprimer le fichier '' (obsolète)
- # Mettez à jour le fichier '_/Script/Entete.php_'
+ # Supprimez tout les fichiers hormis '_/Script/Entete.php_' & vos addons (si compatible)
  # Dans [phpMyAdmin] importer le fichier UPGRADE.sql.
+ # Uploader tout les fichiers par ceux de l'archive
+ # Mettez à jour le fichier '_/Script/Entete.php_'
 
 
 = Infos sur cette version =
@@ -26,6 +26,7 @@
  * issue 93: Date des éléments de la page cartographie remise dans le tableau
  * issue 97: Tri par date de nouveau possible sur la page cartographie
  * issue 98: Détailler l'alerte de suppression sur la page editmembre
+ * issue 140: Modification des planètes inoccupé en planète colonisable
 ==Correctifs:==
  * issue 96: Flotte pnj
 
