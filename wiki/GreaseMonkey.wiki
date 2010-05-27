@@ -11,7 +11,7 @@
  * Désactivation du chat par défaut (cliquer dessus le lance),
  * Simple d’utilisation, il faut au préalable l’extension [https://addons.mozilla.org/fr/firefox/addon/748/ Grease Monkey pour Firefox].
  * Une fois celui ci installé, et Firefox redémarré.
- * Installer le [http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.150.user.js script GreaseMonkey] juste en cliquant dessus et validant l’install.
+ * Installer le [http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.339.user.js script GreaseMonkey] juste en cliquant dessus et validant l’install.
 
 <table border=0>
 <tr>
