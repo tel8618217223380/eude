@@ -44,5 +44,6 @@
 ==Bugs connus:==
 
  * issue 96 Flotte pnj ([http://code.google.com/p/eude/downloads/detail?name=eude-patch-1.4.2.1.tar.gz patch 1.4.2.1])
- * issue 170 GreaseMonkey & MAJ looki ([http://code.google.com/p/eude/downloads/detail?name=eude-patch-1.4.2.2.tar.gz patch 1.4.2.2])
+ * issue 167 GreaseMonkey & MAJ looki ([http://code.google.com/p/eude/downloads/detail?name=eude-patch-1.4.2.2.tar.gz patch 1.4.2.2])
  * issue 177 GreaseMonkey & Caractères accentué ( r357 )
+ * issue 170 GreaseMonkey & Fausse erreur affiché
