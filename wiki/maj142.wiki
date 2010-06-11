@@ -17,7 +17,8 @@
 
 == Nouveauté:==
  * issue 33: Ajout du support ownuniverse/mafiche à GreaseMonkey
- * issue 49: Calcul de parcours sans déplacement par impulsion
+ * issue 49: Calcul de parcours sans déplacement par 
+ * issue 38: Prise en charge des pillages (GreaseMonkey uniquement)
 
 ==Modification:==
  * issue 72: log dernière modif membre passé a dernière connexion
