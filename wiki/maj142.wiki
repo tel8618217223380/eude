@@ -6,12 +6,16 @@
  * Voir la page [Installation Installation] dédié.
 
 = Mise à jour =
+== Serveur ==
  #  Télécharger la version [1.4.x]
  # Supprimez tout les fichiers hormis '_/Script/Entete.php_' & vos addons (si compatible)
  # Dans [phpMyAdmin] importer le fichier UPGRADE.sql.
  # Uploader tout les fichiers par ceux de l'archive
  # Mettez à jour le fichier '_/Script/Entete.php_'
+ # Vérifier les paramètres d'accès utilisateur et générale
 
+== Grease Monkey ==
+ # Pour activer les nouvelles fonctions, veuillez re-valider sur la page option.
 
 = Infos sur cette version =
 
@@ -22,7 +26,7 @@
  * issue 91: MAJ des points en cliquant sur sa planète en bas à droite (GreaseMonkey)
  * issue 91: MAJ du pourcentage d'eau en cliquant sur les planètes habité (GreaseMonkey)
  * issue 91: Ajout du nombre de troupes présente sur une planète a partir d'une flotte (GreaseMonkey uniquement)
-
+ * Toute les modifications de configuration possible à la volée (calcul,serveur,grade,fermeture pour maintenance,...)
 ==Modification:==
  * issue 72: log dernière modif membre passé a dernière connexion
  * issue 72: suppresion du champ "Don"
