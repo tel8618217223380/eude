@@ -17,8 +17,11 @@
 
 == Nouveauté:==
  * issue 33: Ajout du support ownuniverse/mafiche à GreaseMonkey
- * issue 49: Calcul de parcours sans déplacement par 
+ * issue 49: Calcul de parcours sans déplacement par impulsion
  * issue 38: Prise en charge des pillages (GreaseMonkey uniquement)
+ * issue 91: MAJ des points en cliquant sur sa planète en bas à droite (GreaseMonkey)
+ * issue 91: MAJ du pourcentage d'eau en cliquant sur les planètes habité (GreaseMonkey)
+ * issue 91: Ajout du nombre de troupes présente sur une planète a partir d'une flotte (GreaseMonkey uniquement)
 
 ==Modification:==
  * issue 72: log dernière modif membre passé a dernière connexion
@@ -30,5 +33,10 @@
  * issue 140: Modification des planètes inoccupé en planète colonisable
 ==Correctifs:==
  * issue 96: Flotte pnj
+ * issue 167: GreaseMonkey & MAJ looki
+ * issue 177: GreaseMonkey & Caractères accentué
+ * issue 170: GreaseMonkey & Fausse erreur affiché
+ * issue 186: Traitement info mafiche en automatique
+ * issue 145: Pagination page cartographie
 
 ==Bugs connus:==
