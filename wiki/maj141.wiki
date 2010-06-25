@@ -49,4 +49,4 @@
  * issue 170: GreaseMonkey & Fausse erreur affiché,
  * issue 186: Traitement info mafiche en automatique ([http://code.google.com/p/eude/downloads/detail?name=eude-patch-1.4.2.3.tar.gz patch 1.4.2.3])
  * issue 145: Pagination page cartographie
- * issue 221: Fonction recherche dans un rayon au tour d'un SS
+ * issue 221: Fonction recherche dans un rayon autour d'un SS
