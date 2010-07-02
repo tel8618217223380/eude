@@ -1,9 +1,8 @@
 <eude>
-    <rversion>426</rversion>
+    <rversion>433</rversion>
     <eudeversion>1423</eudeversion>
-    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.426.user.js</url>
+    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.433.user.js</url>
     <log><![CDATA[
-    - Mise en place d'une mise à jour automatique...
-    - Fix: log en bas a droite cachant ceux du jeu.
+    - Aperçu de la galaxie ne mentionnais plus certaines flottes
     ]]></log>
 </eude>
