@@ -27,6 +27,8 @@
  * issue 91: MAJ du pourcentage d'eau en cliquant sur les planètes habité (GreaseMonkey)
  * issue 91: Ajout du nombre de troupes présente sur une planète a partir d'une flotte (GreaseMonkey uniquement)
  * Toute les modifications de configuration possible à la volée (calcul,serveur,grade,fermeture pour maintenance,...)
+ * issue 65: Traduction complète de 'eude' possible par le biais de pack (avis au traducteurs)
+ * issue 200: Ajout d'une favicone (celle affiché dans les marque pages)
 ==Modification:==
  * issue 72: log dernière modif membre passé a dernière connexion
  * issue 72: suppresion du champ "Don"
@@ -45,3 +47,13 @@
  * issue 221: Fonction recherche dans un rayon autour d'un SS
 
 ==Bugs connus:==
+
+=== Remerciements ===
+
+ Merci a tous les testeurs & développeurs 
+ * Notamment XCharismatic alias docl88 pour ces modification directe dans les sources =)
+ * XCharismatic & sam.renfou pour le maintiens de l'addons commerce
+ * Wilfried.Winner pour l'addon de triangulation
+
+
+
