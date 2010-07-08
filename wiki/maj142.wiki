@@ -15,7 +15,7 @@
  # Vérifier les paramètres d'accès utilisateur et générale
 
 == Grease Monkey ==
- # Pour activer les nouvelles fonctions, veuillez re-valider sur la page option.
+ # Pour activer les nouvelles fonctions, veuillez re-valider sur la page option du jeu.
 
 = Infos sur cette version =
 
@@ -29,6 +29,7 @@
  * Toute les modifications de configuration possible à la volée (calcul,serveur,grade,fermeture pour maintenance,...)
  * issue 65: Traduction complète de 'eude' possible par le biais de pack (avis au traducteurs)
  * issue 200: Ajout d'une favicone (celle affiché dans les marque pages)
+ * issue 71: Nombre de batiment sur une planète
 ==Modification:==
  * issue 72: log dernière modif membre passé a dernière connexion
  * issue 72: suppresion du champ "Don"
