@@ -9,9 +9,9 @@
 == Serveur ==
  #  Télécharger la version [1.4.x]
  # Supprimez tout les fichiers hormis '_/Script/Entete.php_' & vos addons (si compatible)
- # Dans [phpMyAdmin] importer le fichier UPGRADE.sql.
  # Uploader tout les fichiers par ceux de l'archive
  # Mettez à jour le fichier '_/Script/Entete.php_'
+ # Allez a l'adresse '/upgrade/run.php' pour lancer la mise à jour de votre base de donnée
  # Vérifier les paramètres d'accès utilisateur et générale
 
 == Grease Monkey ==

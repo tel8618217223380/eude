@@ -11,10 +11,11 @@ Si vous avez déjà ces pré-requis, passez a la partie *Installation*.
 
  # Décompressez l'archive.
  # Mettez tous les fichiers sur le ftp de votre hébergeur.
- # [phpMyAdmin Importer] la base de donnée “INSTALL.sql” par phpmyadmin.
- # Renommer le fichier “Entete.dist.php” en “Entete.php”
+ # Ouvrez la page dans votre navigateur, et suivez le guide...
+ # ~~[phpMyAdmin Importer] la base de donnée “INSTALL.sql” par phpmyadmin.~~
+ # ~~Renommer le fichier “Entete.dist.php” en “Entete.php”~~
 
-Modifiez les valeurs suivante selon votre configuration (voir éditeurs plus bas):
+~~Modifiez les valeurs suivante selon votre configuration (voir éditeurs plus bas):
 
 {{{
 // Définition des variables globale utilisé par le système
@@ -32,7 +33,7 @@ La suite du fichier “Entete.php” est personnalisable selon vos envies.
  # Créer votre compte par le menu *Membres*.
  # Puis dans *Membres*/*Editions* mettez vous un accès _Super-Administrateur_.
  # Et supprimer le compte *admin*.
- La prise en compte des changements ce fait tout seul (vous serez déconnecté).
+ La prise en compte des changements ce fait tout seul (vous serez déconnecté).~~
 
 === Cas particulier ===
 
