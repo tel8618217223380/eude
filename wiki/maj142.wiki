@@ -30,6 +30,8 @@
  * issue 65: Traduction complète de 'eude' possible par le biais de pack (avis au traducteurs)
  * issue 200: Ajout d'une favicone (celle affiché dans les marque pages)
  * issue 71: Nombre de batiment sur une planète
+ * Installation & mise à jour simplifié
+ * issue 118: Mise à jour des membres des empires (GreaseMonkey uniquement)
 ==Modification:==
  * issue 72: log dernière modif membre passé a dernière connexion
  * issue 72: suppresion du champ "Don"
