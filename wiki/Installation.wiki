@@ -16,6 +16,7 @@ Si vous avez déjà ces pré-requis, passez à la partie *Installation*.
  # Tester la connexion avec le serveur.
  # Si la connexion est valide, un lien pour lancer l'installation apparaitra,
  # Cliquez dessus, et buvez votre café,
+ # *Supprimez les dossiers _install_ et _upgrade_ !*
  # C'est tout, enjoy,
 
 === Cas particulier ===
@@ -38,4 +39,3 @@ Si vous avez déjà ces pré-requis, passez à la partie *Installation*.
  * http://www.firstheberg.com/ : [http://app216.free.fr/eu2/tracker/view.php?id=181 inscrustation de pub directement dans les pages]
  * http://www.hebfree.org/ : [http://app216.free.fr/eu2/tracker/view.php?id=209 problème de sessions...]
  * Proposez ceux qui vous ont déçus ?
-
