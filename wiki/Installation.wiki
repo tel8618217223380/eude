@@ -5,46 +5,37 @@
 
 Il vous faut un hébergeur avec php5+ et mysql 5+<br>
 La plupart seront compatible ([http://app216.free.fr/eu2/tracker/news_view_page.php?news_id=2 liste])<br>
-Si vous avez déjà ces pré-requis, passez a la partie *Installation*.
+Si vous avez déjà ces pré-requis, passez à la partie *Installation*.
 
 === Installation ===
 
  # Décompressez l'archive.
  # Mettez tous les fichiers sur le ftp de votre hébergeur.
- # (_Prochaine version_) Ouvrez la page dans votre navigateur, et suivez le guide...
- # ~~[phpMyAdmin Importer] la base de donnée “INSTALL.sql” par phpmyadmin.~~
- # ~~Renommer le fichier “Entete.dist.php” en “Entete.php”~~
-
-~~Modifiez les valeurs suivante selon votre configuration (voir éditeurs plus bas):~~
-
-{{{
-// Définition des variables globale utilisé par le système
-$BaseMysql = "localhost";
-$BaseUser  = "user";
-$BasePass  = "pass";
-$BaseName  = "database";
-}}}
-
-~~La suite du fichier “Entete.php” est personnalisable selon vos envies.~~
- # ~~Placez tout les fichiers sur le ftp.~~
- # ~~Ouvrez la page web où vous avez installer le “Data Engine”~~
- # ~~*Login*= admin~~
- # ~~*Pass* = admin~~
- # ~~Créer votre compte par le menu *Membres*.~~
- # ~~Puis dans *Membres*/*Editions* mettez vous un accès _Super-Administrateur_.~~
- # ~~Et supprimer le compte *admin*.~~
- ~~La prise en compte des changements ce fait tout seul (vous serez déconnecté).~~
+ # Ouvrez la page dans votre navigateur,
+ # Remplissez selon votre configuration (les champ précédé d'une étoile doivent être remplit)
+ # Tester la connexion avec le serveur.
+ # Si la connexion est valide, un lien pour lancer l'installation apparaitra,
+ # Cliquez dessus, et buvez votre café,
+ # C'est tout, enjoy,
 
 === Cas particulier ===
 
  * [freefr Pages free.fr]
  * [http://guide.ovh.com/Php5ChezOvh Chez OVH] (en php4 par défaut, issue 51)
 
-==== Éditeurs ====
- * <u>Windows</u>: notepad++, netbeans (surtout pas le bloc-note ou word)
- * <u>Linux</u>: gedit, kate, mousepad ou netbeans
- * <u>MAC</u>: ?? , netbeans
+=== Hébergeurs ===
 
-Pour *notepad++*, enregistrez en *UTF-8 sans BOM*
+*Liste non-exaustive*
 
-http://eude.googlecode.com/svn/wiki/notepad_encoder_utf-8.jpg
+ * [http://subscribe.free.fr/accesgratuit/ free.fr] `Addons scanner ne fonctionne plus`
+ * [http://www.evoserv.com/index.php?view=hosting&offer=free evoserv]
+ * [http://www.clanfree.net/hebergement-gratuit.html clanfree] `Addons scanner en premium`
+ * [http://www.iceheberg.fr/offre.php ice heberg]
+ * Proposer le votre ?
+
+*ceux qui pose problème*
+
+ * http://www.firstheberg.com/ : [http://app216.free.fr/eu2/tracker/view.php?id=181 inscrustation de pub directement dans les pages]
+ * http://www.hebfree.org/ : [http://app216.free.fr/eu2/tracker/view.php?id=209 problème de sessions...]
+ * Proposez ceux qui vous ont déçus ?
+

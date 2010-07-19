@@ -6,16 +6,12 @@
  * Voir la page [Installation Installation] dédié.
 
 = Mise à jour =
-== Serveur ==
- #  Télécharger la version [1.4.x]
+ #  Télécharger la version [http://code.google.com/p/eude/downloads/detail?name=eude-1.4.5.tar.gz 1.4.5]
  # Supprimez tout les fichiers hormis '_/Script/Entete.php_' & vos addons (si compatible)
  # Uploader tout les fichiers par ceux de l'archive
  # Mettez à jour le fichier '_/Script/Entete.php_'
- # Allez a l'adresse '/upgrade/run.php' pour lancer la mise à jour de votre base de donnée
- # Vérifier les paramètres d'accès utilisateur et générale
-
-== Grease Monkey ==
- # Pour activer les nouvelles fonctions, veuillez re-valider sur la page option du jeu.
+ # Allez a l'adresse '/upgrade/upgrade142.php' pour lancer la mise à jour de votre base de donnée
+ # Vérifier les paramètres d'accès utilisateurs et de configuration serveur sur la page Admin.
 
 = Infos sur cette version =
 
@@ -40,6 +36,7 @@
  * issue 97: Tri par date de nouveau possible sur la page cartographie
  * issue 98: Détailler l'alerte de suppression sur la page editmembre
  * issue 140: Modification des planètes inoccupé en planète colonisable
+ * issue 99: Modification du fonctionnement interne
 ==Correctifs:==
  * issue 96: Flotte pnj
  * issue 167: GreaseMonkey & MAJ looki
@@ -51,11 +48,11 @@
 
 ==Bugs connus:==
 
-=== Remerciements ===
+= Remerciements =
 
- Merci a tous les testeurs & développeurs 
- * Notamment XCharismatic alias docl88 pour ces modification directe dans les sources =)
- * XCharismatic & sam.renfou pour le maintiens de l'addons commerce
+ Merci à tous les testeurs & développeurs 
+ * Notamment XCharismatic alias docl88 pour ces modifications directe dans les sources et son coté forcing quand je suis pas du même avis =)
+ * XCharismatic & sam.renfou pour le maintiens de l'addons commerce entre autre...
  * Wilfried.Winner pour l'addon de triangulation
 
 

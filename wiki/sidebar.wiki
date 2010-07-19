@@ -1,9 +1,8 @@
 #summary sidebar
 
   * [Installation Installation]
-    * [phpMyAdmin Importation sql]
     * [freefr Cas pages free.fr]
   * Mise à jour
-    * [phpMyAdmin Importation sql]
     * [maj141 1.4.1]
+    * [maj142 1.4.2]
   * [GreaseMonkey Script GreaseMonkey]

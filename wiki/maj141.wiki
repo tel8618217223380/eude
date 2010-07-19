@@ -7,7 +7,7 @@
 
 = Mise à jour =
 
- #  Télécharger la version [http://code.google.com/p/eude/downloads/detail?name=eude-1.4.2.1.tar.gz 1.4.2.1]
+ #  Télécharger la version [http://code.google.com/p/eude/downloads/detail?name=eude-1.4.2.3.tar.gz 1.4.2.3]
  #  Écrasez tout les fichiers par les nouveaux
  # Supprimer le fichier '_/tpl/index.tpl.php_' (obsolète)
  # Mettez à jour le fichier '_/Script/Entete.php_'
