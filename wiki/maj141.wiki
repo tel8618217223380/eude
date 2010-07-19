@@ -1,5 +1,5 @@
 #summary Mise à jour depuis la version 1.4.1
-#labels Phase-Deploy,Featured
+#labels Phase-Deploy
 
 = Installation =
 

@@ -1,12 +1,12 @@
 #summary Mise à jour depuis la version 1.4.2
-#labels Phase-Deploy
+#labels Phase-Deploy,Featured
 
 = Installation =
 
  * Voir la page [Installation Installation] dédié.
 
 = Mise à jour =
- #  Télécharger la version [http://code.google.com/p/eude/downloads/detail?name=eude-1.4.5.tar.gz 1.4.5]
+ # Télécharger la version [http://code.google.com/p/eude/downloads/detail?name=eude-1.4.5.tar.gz 1.4.5]
  # Supprimez tout les fichiers hormis '_/Script/Entete.php_' & vos addons (si compatible)
  # Uploader tout les fichiers par ceux de l'archive
  # Mettez à jour le fichier '_/Script/Entete.php_'
@@ -47,6 +47,7 @@
  * issue 221: Fonction recherche dans un rayon autour d'un SS
 
 ==Bugs connus:==
+ * ...
 
 = Remerciements =
 
