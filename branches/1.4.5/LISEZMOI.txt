@@ -1,0 +1,71 @@
+--------------------------------------------------------------------------------
+                     Empire Universe 2: Data Engine
+
+Basé sur le prototype de Ellesar81
+MAJ & modification par Alex10336
+--------------------------------------------------------------------------------
+
+Ce script n'est aucunement affilié à 'looki'.
+Il a été développé, et amélioré par les joueurs alias:
+- Alex10336
+- Docl88 alias Xcharismatic
+- Vous ?
+
+Certaines images utilisées sont la propriété de looki.fr.
+Tout le reste est sous license disponible ci-dessous
+- GNU Public License 3.0 ( http://www.gnu.org/licenses/gpl-3.0.txt )
+-Creative Commons 3.0 BY-SA ( http://creativecommons.org/licenses/by-sa/3.0/deed.fr )
+
+--------------------------------------------------------------------------------
+
+Site permettant la gestion d'information pour le jeu EU2.
+
+ - Vortex, Trajet au "plus cours"
+ - Référencement des Joueurs/Ennemis/Flottes pirate/Astéroïdes/...
+ - Recherche sur carte/tableau par joueur/empire
+ - Arbre de recherche et estimations du temps restant
+ - etc...
+
+Pré-requis (serveur):
+- php 5 ou supérieur
+- mysql 5 ou supérieur
+- bibliothèque GD 2 (généralement fournit avec php5)
+
+Pré-requis (utilisateur):
+- Firefox 3+
+- Internet Explorer 7+
+- Chrome
+- Savoir faire des copier/coller (...)
+
+Serveur de démo: http://app216.free.fr/eu2/test/
+
+--------------------------------------------------------------------------------
+--- Installation: http://code.google.com/p/eude/wiki/Installation
+--------------------------------------------------------------------------------
+--- Mise à jour: http://code.google.com/p/eude/wiki/maj142
+--------------------------------------------------------------------------------
+ # Supprimez tout les fichiers hormis '_/Script/Entete.php_' & vos addons (si compatible)
+ # Dans [phpMyAdmin] importer le fichier UPGRADE.sql.
+ # Uploader tout les fichiers par ceux de l'archive
+ # Mettez à jour le fichier '_/Script/Entete.php_'
+--------------------------------------------------------------------------------
+
+= Infos sur cette version =
+
+== Nouveauté:==
+ * issue 33: Ajout du support ownuniverse/mafiche à GreaseMonkey
+ * issue 49: Calcul de parcours sans déplacement par impulsion
+
+==Modification:==
+ * issue 72: log dernière modif membre passé a dernière connexion
+ * issue 72: suppresion du champ "Don"
+ * issue 70: css revue de la tête aux pieds
+ * issue 93: Date des éléments de la page cartographie remise dans le tableau
+ * issue 97: Tri par date de nouveau possible sur la page cartographie
+ * issue 98: Détailler l'alerte de suppression sur la page editmembre
+ * issue 140: Modification des planètes inoccupé en planète colonisable
+
+==Correctifs:==
+ * issue 96: Flotte pnj
+
+==Bugs connus:==
