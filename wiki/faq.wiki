@@ -1,26 +1,33 @@
 #summary Foire Aux Questions
-#labels Phase-Deploy
 
 = Questions =
- * [#Pouvez_vous_m'installer_un_? Pouvez vous m'installer un DataEngine ?]
+ * [#Pouvez_vous_installer_un_DataEngine Pouvez vous m'installer un DataEngine] ?
+ * [#Comment_traduire_eude Comment traduire eude] ?
  * [#Modifier_le_rayon_de_scan Modifier le rayon de scan] (Addons Scanner)
- * [#Comment_devenir_béta_testeur/développeur Comment devenir béta testeur/développeur] sur eude
- * [#FAQ] incomplète ?
+ * [#Comment_devenir_beta_testeur_ou_developpeur Comment devenir béta testeur ou développeur] sur eude
+ * [#FAQ FAQ] incomplète ?
 = Réponses =
 
-=== Pouvez vous m'installer un DataEngine ? ===
+=== Pouvez vous installer un DataEngine ===
  * La réponse est simple: NON !
  => Procédure d'[Installation installation].
+
+=== Comment traduire eude ===
+ * Copier le pack de base sur [http://code.google.com/p/eude/source/browse/trunk/last/tpl/lng/ le svn]
+ * Placer le dans un nouveau dossier de votre installation (/tpl/lng/<xx>)
+ * Traduisez les fichiers un a un.
+ * Et pensez a [http://code.google.com/p/eude/issues/entry?template=i18n faire partager] votre traduction
 
 === Modifier le rayon de scan ===
  * issue 264: Modifiez le fichier _/addons/scanner.conf.php_
 
-=== Comment devenir béta testeur/développeur ===
+=== Comment devenir beta testeur ou developpeur ===
  * Savoir un minimum en PHP ! (qui l'aurais crus)
  * Savoir ce servir d'un svn pour récupérer directement sur le 'trunk'
  * Être capable de trouver, ou au moins cibler le problème,
- * Savoir faire un rapport complet, le 'sa marche pas', a oublier,
+ * Savoir faire un rapport complet, le 'sa marche pas', à oublier,
  * Savoir faire des remarques constructives,
+ * Être Francophone de préférance,
  * Avoir un compte et faire [http://code.google.com/p/eude/issues/entry?template=Testeur une demande] *complète*
 
 === FAQ ===

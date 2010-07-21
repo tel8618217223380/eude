@@ -6,3 +6,4 @@
     * [maj141 1.4.1]
     * [maj142 1.4.2]
   * [GreaseMonkey Script GreaseMonkey]
+  * [faq F.A.Q.]
