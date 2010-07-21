@@ -1,0 +1,28 @@
+#summary FAQ
+#labels Phase-Deploy
+
+= Questions =
+ * [#Pouvez vous m'installer un DataEngine ?]
+ * [#Modifier le rayon de scan] (Addons Scanner)
+ * [#Comment devenir béta testeur/développeur] sur eude
+ * [#FAQ] incomplète ?
+= Réponses =
+
+=== Pouvez vous m'installer un DataEngine ? ===
+ * La réponse est simple: NON !
+ => Procédure d'[Installation installation].
+
+=== Modifier le rayon de scan ===
+ * issue 264: Modifiez le fichier _/addons/scanner.conf.php_
+
+=== Comment devenir béta testeur/développeur ===
+ * Savoir un minimum en PHP ! (qui l'aurais crus)
+ * Savoir ce servir d'un svn pour récupérer directement sur le 'trunk'
+ * Être capable de trouver, ou au moins cibler le problème,
+ * Savoir faire un rapport complet, le 'sa marche pas', a oublier,
+ * Savoir faire des remarques constructives,
+ * Avoir un compte et faire [http://code.google.com/p/eude/issues/entry?template=Testeur une demande] *complète*
+
+=== FAQ ===
+ * Si vous avez une question *et* réponse pouvant être ajouté à la F.A.Q., Proposer là ci-desous.
+
