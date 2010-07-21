@@ -4,7 +4,7 @@
 === Pré-requis ===
 
 Il vous faut un hébergeur avec php5+ et mysql 5+<br>
-La plupart seront compatible ([http://app216.free.fr/eu2/tracker/news_view_page.php?news_id=2 liste])<br>
+La plupart seront compatible ([http://code.google.com/p/eude/wiki/Installation?tm=6#Hébergeurs liste])<br>
 Si vous avez déjà ces pré-requis, passez à la partie *Installation*.
 
 === Installation ===
@@ -26,16 +26,16 @@ Si vous avez déjà ces pré-requis, passez à la partie *Installation*.
 
 === Hébergeurs ===
 
-*Liste non-exaustive*
+*Liste non-exaustive de ceux compatible*
 
- * [http://subscribe.free.fr/accesgratuit/ free.fr] `Addons scanner ne fonctionne plus`
- * [http://www.evoserv.com/index.php?view=hosting&offer=free evoserv]
- * [http://www.clanfree.net/hebergement-gratuit.html clanfree] `Addons scanner en premium`
+ * [http://subscribe.free.fr/accesgratuit/ Free.fr]
+ * [http://www.clanfree.net/hebergement-gratuit.html Clanfree]
  * [http://www.iceheberg.fr/offre.php ice heberg]
+ * [http://www.000webhost.com/ 000webhost]
  * Proposer le votre ?
 
-*ceux qui pose problème*
+*Ceux qui pose problème*
 
- * http://www.firstheberg.com/ : [http://app216.free.fr/eu2/tracker/view.php?id=181 inscrustation de pub directement dans les pages]
- * http://www.hebfree.org/ : [http://app216.free.fr/eu2/tracker/view.php?id=209 problème de sessions...]
+ * www.firstheberg.com : [http://app216.free.fr/eu2/tracker/view.php?id=181 Inscrustation de pub directement dans les pages]
+ * www.hebfree.org : [http://app216.free.fr/eu2/tracker/view.php?id=209 Problème de sessions...]
  * Proposez ceux qui vous ont déçus ?
