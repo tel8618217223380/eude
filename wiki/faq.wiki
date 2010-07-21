@@ -14,7 +14,7 @@
 
 === Comment traduire eude ===
  * Copier le pack de base sur [http://code.google.com/p/eude/source/browse/trunk/last/tpl/lng/ le svn]
- * Placer le dans un nouveau dossier de votre installation (/tpl/lng/<xx>)
+ * Placer le dans un nouveau dossier de votre installation (/tpl/lng/xx)
  * Traduisez les fichiers un a un.
  * Et pensez a [http://code.google.com/p/eude/issues/entry?template=i18n faire partager] votre traduction
 
@@ -32,4 +32,3 @@
 
 === FAQ ===
  * Si vous avez une question *et* réponse pouvant être ajouté à la F.A.Q., Proposer là ci-desous.
-
