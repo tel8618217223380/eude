@@ -1,10 +1,10 @@
-#summary FAQ
+#summary Foire Aux Questions
 #labels Phase-Deploy
 
 = Questions =
- * [#Pouvez vous m'installer un DataEngine ?]
- * [#Modifier le rayon de scan] (Addons Scanner)
- * [#Comment devenir béta testeur/développeur] sur eude
+ * [#Pouvez_vous_m'installer_un_? Pouvez vous m'installer un DataEngine ?]
+ * [#Modifier_le_rayon_de_scan Modifier le rayon de scan] (Addons Scanner)
+ * [#Comment_devenir_béta_testeur/développeur Comment devenir béta testeur/développeur] sur eude
  * [#FAQ] incomplète ?
 = Réponses =
 
