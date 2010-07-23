@@ -6,11 +6,12 @@
  * Voir la page [Installation Installation] dédié.
 
 = Mise à jour =
- # Télécharger la version [http://code.google.com/p/eude/downloads/detail?name=eude-1.4.5.tar.gz 1.4.5]
+ # Faites une sauvegarde de votre installation actuelle.
+ # Télécharger la version [http://code.google.com/p/eude/downloads/detail?name=eude-1.4.5.1.tar.gz 1.4.5.1]
  # Supprimez tout les fichiers hormis '_/Script/Entete.php_' & vos addons (si compatible)
  # Uploader tout les fichiers par ceux de l'archive
  # Mettez à jour le fichier '_/Script/Entete.php_'
- # Allez a l'adresse '/upgrade/upgrade142.php' pour lancer la mise à jour de votre base de donnée
+ # Allez à l'adresse '/upgrade/upgrade142.php' pour lancer la mise à jour de votre base de donnée
  # Vérifier les paramètres d'accès utilisateurs et de configuration serveur sur la page Admin.
  # *Supprimez les dossiers _install_ et _upgrade_ !*
 
@@ -48,7 +49,11 @@
  * issue 221: Fonction recherche dans un rayon autour d'un SS
 
 ==Bugs connus:==
- * ...
+ * issue 255: Permissions d'accès insuffisants à l'installation
+ * issue 256 et issue 258: Sauvegarde de config érronée
+ * issue 259: Correctif sur install.sql
+ * issue 262: Modif sur la gestion pillage + i18n
+ * issue 274: Problème avec les flottes PNJ (version 1.4.5.1 disponible)
 
 = Remerciements =
 
