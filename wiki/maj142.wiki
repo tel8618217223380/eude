@@ -15,7 +15,7 @@
  # Vérifier les paramètres d'accès utilisateurs et de configuration serveur sur la page Admin.
  # *Supprimez les dossiers _install_ et _upgrade_ !*
 
-== Depuis la version 1.4.5(.0) ==
+=== Depuis la version 1.4.5(.0) ===
  # Uploader tout les fichiers par ceux de l'archive
  # Allez à l'adresse '/upgrade/upgrade1450.php' pour lancer la mise à jour de votre base de donnée
  # Vérifier les paramètres d'accès utilisateurs et de configuration serveur sur la page Admin.
@@ -68,4 +68,3 @@
  * Notamment XCharismatic alias docl88 pour ces modifications directe dans les sources et son coté forcing quand je suis pas du même avis =)
  * XCharismatic & sam.renfou pour le maintiens de l'addons commerce entre autre...
  * Wilfried.Winner pour l'addon de triangulation
-
