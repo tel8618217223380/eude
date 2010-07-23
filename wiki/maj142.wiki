@@ -15,6 +15,13 @@
  # Vérifier les paramètres d'accès utilisateurs et de configuration serveur sur la page Admin.
  # *Supprimez les dossiers _install_ et _upgrade_ !*
 
+== Depuis la version 1.4.5(.0) ==
+ # Uploader tout les fichiers par ceux de l'archive
+ # Allez à l'adresse '/upgrade/upgrade1450.php' pour lancer la mise à jour de votre base de donnée
+ # Vérifier les paramètres d'accès utilisateurs et de configuration serveur sur la page Admin.
+ # *Supprimez les dossiers _install_ et _upgrade_ !*
+
+
 = Infos sur cette version =
 
 == Nouveauté:==
