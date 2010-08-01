@@ -29,7 +29,6 @@ Si vous avez déjà ces pré-requis, passez à la partie *Installation*.
 *Liste non-exaustive de ceux compatible*
 
  * [http://subscribe.free.fr/accesgratuit/ Free.fr]
- * [http://www.clanfree.net/hebergement-gratuit.html Clanfree]
  * [http://www.000webhost.com/ 000webhost]
  * Proposer le votre ?
 
