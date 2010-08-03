@@ -1,8 +1,14 @@
 <eude>
-    <rversion>433</rversion>
-    <eudeversion>1423</eudeversion>
-    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.433.user.js</url>
+    <rversion>572</rversion>
+    <eudeversion>1453</eudeversion>
+    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.572.user.js</url>
     <log><![CDATA[
-    - Aperçu de la galaxie ne mentionnais plus certaines flottes
+    - Support du centre de contrôle.
+    - Support du clique sur la planète en bas à gauche du jeu.
+    - Logs de bataille et de pillage.
+    - Nombre de troupes sur les planètes.
+    - Pourcentage d'eau sur les planètes.
+    - Mise à jour des membres d'un empire.
+    - Compatible avec les serveurs Anglais.
     ]]></log>
 </eude>
