@@ -37,4 +37,5 @@ Si vous avez déjà ces pré-requis, passez à la partie *Installation*.
  * www.firstheberg.com : [http://app216.free.fr/eu2/tracker/view.php?id=181 Inscrustation de pub directement dans les pages]
  * www.hebfree.org : [http://app216.free.fr/eu2/tracker/view.php?id=209 Problème de sessions...]
  * [http://forum.iceheberg.fr/annonces-iceheberg/les-hebergements-pour-data-engine-t70.html www.iceheberg.fr]
+ * http://x10hosting.com/ : Reset session lors de la recherche d'itinéraire
  * Proposez ceux qui vous ont déçus ?
