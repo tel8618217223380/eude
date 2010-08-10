@@ -29,7 +29,7 @@ Si vous avez déjà ces pré-requis, passez à la partie *Installation*.
 *Liste non-exaustive de ceux compatible*
 
  * [http://subscribe.free.fr/accesgratuit/ Free.fr]
- * [http://www.000webhost.com/ 000webhost]
+ * [http://www.000webhost.com/ 000webhost] : Temps d'exécution max 9s
  * [http://byethost.com/index.php/free-hosting byethost] : Temps d'exécution max 9s
  * Proposer le votre ?
 
