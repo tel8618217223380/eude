@@ -3,6 +3,7 @@
 = Questions =
  * [#Pouvez_vous_installer_un_DataEngine Pouvez vous m'installer un DataEngine] ?
  * [#Comment_traduire_eude Comment traduire eude] ?
+ * [#Page_partiellement_blanche Page partiellement blanche]
  * [#Modifier_le_rayon_de_scan Modifier le rayon de scan] (Addons Scanner)
  * [#Comment_devenir_beta_testeur_ou_developpeur Comment devenir béta testeur ou développeur] sur eude
  * [#FAQ FAQ] incomplète ?
@@ -13,11 +14,17 @@
  => Procédure d'[Installation installation].
 
 === Comment traduire eude ===
- * Copier le pack de base sur [http://code.google.com/p/eude/source/browse/trunk/last/tpl/lng/ le svn]
+ * Copier le pack de base sur [http://code.google.com/p/eude/source/browse/trunk/last/tpl/lng/fr/ le svn]
  * Placer le dans un nouveau dossier de votre installation (/tpl/lng/xx)
  * Traduisez les fichiers un a un.
  * Et pensez a [http://code.google.com/p/eude/issues/entry?template=i18n faire partager] votre traduction
 
+=== Page partiellement blanche ===
+ * Identification Impossible ?
+ * Le point 4. de l'[Installation] n'a pas été remplit correctement.
+ * Vous pouvez modifier le ficher /Script/Entete.php à la ligne où ce trouve `define('ROOT_URL', '/');`
+ pour corriger votre erreur de configuration. Les explications sont dans le fichier lui-même.
+ 
 === Modifier le rayon de scan ===
  * issue 264: Modifiez le fichier _/addons/scanner.conf.php_
 
