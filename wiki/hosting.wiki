@@ -1,13 +1,13 @@
 #summary Liste des hébergeurs compatible ou non.
 #labels Phase-Deploy
 
-|| *Compatible* || *Nom* || *Lien* || *Observations* ||
-|| Oui || Free.fr || http://subscribe.free.fr/accesgratuit/ || ||
-|| Oui || 000webhost ||http://www.000webhost.com/ || Temps d'exécution max 9s ||
-|| Oui || byethost || http://byethost.com/index.php/free-hosting || Temps d'exécution max 9s ||
-|||||||| _Proposer le votre ?_ ||
-|| Non || firstheberg || http://www.firstheberg.com || Inscrustation de pub directement dans les pages ||
-|| Non || www.hebfree.org || www.hebfree.org || Problème de sessions... ||
-|| --- || Ice Heberg || http://www.iceheberg.fr/ || issue 302 ||
-|| Non || x10hosting || http://x10hosting.com/ || Reset session lors de la recherche d'itinéraire ||
-|||||||| _Proposez ceux qui vous ont déçus ?_ ||
+|| *Compatible* || *Gratuit* || *Nom* || *Lien* || *Observations* ||
+|| Oui || Oui || Free.fr || http://subscribe.free.fr/accesgratuit/ || ||
+|| Oui || Oui || 000webhost ||http://www.000webhost.com/ || Temps d'exécution max 9s ||
+|| Oui || Oui || BYET Internet Services || http://byethost.com/index.php/free-hosting || Temps d'exécution max 9s ||
+|||| |||||| _Proposer le votre ?_ ||
+|| Non || Oui || firstheberg || http://www.firstheberg.com || Inscrustation de pub directement dans les pages ||
+|| Non || Oui || www.hebfree.org || http://www.hebfree.org || Problème de sessions... ||
+|| --- || Oui || Ice Heberg || http://www.iceheberg.fr/ || issue 302 ||
+|| Non || Oui || x10hosting || http://x10hosting.com/free-hosting-signup || Reset session lors de la recherche d'itinéraire ||
+|||| |||||| _Proposez ceux qui vous ont déçus ?_ ||
