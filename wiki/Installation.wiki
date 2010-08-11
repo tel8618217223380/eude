@@ -4,7 +4,7 @@
 === Pré-requis ===
 
 Il vous faut un hébergeur avec php5+ et mysql 5+<br>
-La plupart seront compatible ([http://code.google.com/p/eude/wiki/Installation?tm=6#Hébergeurs liste])<br>
+La plupart seront compatible ([hosting liste])<br>
 Si vous avez déjà ces pré-requis, passez à la partie *Installation*.
 
 === Installation ===
@@ -23,20 +23,3 @@ Si vous avez déjà ces pré-requis, passez à la partie *Installation*.
 
  * [freefr Pages free.fr]
  * [http://guide.ovh.com/Php5ChezOvh Chez OVH] (en php4 par défaut, issue 51)
-
-=== Hébergeurs ===
-
-*Liste non-exaustive de ceux compatible*
-
- * [http://subscribe.free.fr/accesgratuit/ Free.fr]
- * [http://www.000webhost.com/ 000webhost] : Temps d'exécution max 9s
- * [http://byethost.com/index.php/free-hosting byethost] : Temps d'exécution max 9s
- * Proposer le votre ?
-
-*Ceux qui pose problème*
-
- * www.firstheberg.com : [http://app216.free.fr/eu2/tracker/view.php?id=181 Inscrustation de pub directement dans les pages]
- * www.hebfree.org : [http://app216.free.fr/eu2/tracker/view.php?id=209 Problème de sessions...]
- * [http://forum.iceheberg.fr/annonces-iceheberg/les-hebergements-pour-data-engine-t70.html www.iceheberg.fr]
- * http://x10hosting.com/ : Reset session lors de la recherche d'itinéraire
- * Proposez ceux qui vous ont déçus ?
