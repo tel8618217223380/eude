@@ -2,9 +2,10 @@
 #labels Phase-Deploy
 
 || *Compatible* || *Gratuit* || *Nom* || *Lien* || *Observations* ||
-|| Oui || Oui || Free.fr || http://subscribe.free.fr/accesgratuit/ || ||
+|| Oui || Oui || Free.fr || http://subscribe.free.fr/accesgratuit/ || [freefr Page consacré] ||
 || Oui || Oui || 000webhost ||http://www.000webhost.com/ || Temps d'exécution max 9s ||
 || Oui || Oui || BYET Internet Services || http://byethost.com/index.php/free-hosting || Temps d'exécution max 9s ||
+|| Oui || Non || OVH || http://www.ovh.com/fr/hebergement_mutualise/ || issue 51 ||
 |||| |||||| _Proposer le votre ?_ ||
 || Non || Oui || firstheberg || http://www.firstheberg.com || Inscrustation de pub directement dans les pages ||
 || Non || Oui || www.hebfree.org || http://www.hebfree.org || Problème de sessions... ||
