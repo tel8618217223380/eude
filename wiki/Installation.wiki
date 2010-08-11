@@ -4,7 +4,7 @@
 === Pré-requis ===
 
 Il vous faut un hébergeur avec php5+ et mysql 5+<br>
-La plupart seront compatible ([hosting liste])<br>
+La plupart seront compatible ([hosting?tm=0 liste])<br>
 Si vous avez déjà ces pré-requis, passez à la partie *Installation*.
 
 === Installation ===
