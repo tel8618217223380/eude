@@ -66,6 +66,8 @@
  * issue 295: English pack translation done by Curtis
  * issue 297: Outils de nettoyage manuel cassé
  * issue 298: GreaseMonkey for English server now supported.  (version 1.4.5.2 disponible)
+ * issue 314: Importation données de production
+ * issue 315: Numéro de version "1.4.5.2" incorrecte (la 1.4.5.1 est affiché)
 
 = Remerciements =
 
