@@ -9,7 +9,7 @@ Si vous avez déjà ces pré-requis, passez à la partie *Installation*.
 
 === Installation ===
 
- # Décompressez l'archive.
+ # Décompressez l'archive [http://code.google.com/p/eude/downloads/list?can=2&q=component%3Aeude téléchargé].
  # Mettez tous les fichiers sur le ftp de votre hébergeur.
  # Ouvrez la page dans votre navigateur,
  # Remplissez selon votre configuration (les champ précédé d'une étoile doivent être remplit)
