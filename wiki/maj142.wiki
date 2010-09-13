@@ -37,6 +37,7 @@
  * issue 71: Nombre de batiment sur une planète
  * Installation & mise à jour simplifié
  * issue 118: Mise à jour des membres des empires (GreaseMonkey uniquement)
+ * [http://code.google.com/p/eude/issues/detail?id=134#c68 issue 134#68]: Boutons généré par eude.
 ==Modification:==
  * issue 72: log dernière modif membre passé a dernière connexion
  * issue 72: suppresion du champ "Don"
