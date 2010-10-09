@@ -1,14 +1,8 @@
 <eude>
-    <rversion>572</rversion>
+    <rversion>634</rversion>
     <eudeversion>1453</eudeversion>
-    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.572.user.js</url>
+    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.634.user.js</url>
     <log><![CDATA[
-    - Support du centre de contrôle.<br/>
-    - Support du clique sur la planète en bas à gauche du jeu.<br/>
-    - Logs de bataille et de pillage.<br/>
-    - Nombre de troupes sur les planètes.<br/>
-    - Pourcentage d'eau sur les planètes.<br/>
-    - Mise à jour des membres d'un empire.<br/>
-    - Compatible avec les serveurs Anglais.<br/>
+    - Correction pour le titre de votre commandant (maj looki)<br/>
     ]]></log>
 </eude>
