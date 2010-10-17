@@ -1,8 +1,9 @@
 <eude>
-    <rversion>634</rversion>
+    <rversion>638</rversion>
     <eudeversion>1453</eudeversion>
-    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.634.user.js</url>
+    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.638.user.js</url>
     <log><![CDATA[
-    - Correction pour le titre de votre commandant (maj looki)<br/>
+    - Correctif pour la mise à jour des membres d'empire<br/>
+    - Errata avec le mode 'debug'<br/>
     ]]></log>
 </eude>
