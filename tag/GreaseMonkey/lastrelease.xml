@@ -1,9 +1,8 @@
 <eude>
-    <rversion>638</rversion>
+    <rversion>641</rversion>
     <eudeversion>1453</eudeversion>
-    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.638.user.js</url>
+    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.641.user.js</url>
     <log><![CDATA[
-    - Correctif pour la mise à jour des membres d'empire<br/>
-    - Errata avec le mode 'debug'<br/>
+    - Mise à jour des points (MAJ looki)
     ]]></log>
 </eude>
