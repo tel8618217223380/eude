@@ -1,8 +1,8 @@
 <eude>
-    <rversion>641</rversion>
+    <rversion>646</rversion>
     <eudeversion>1453</eudeversion>
-    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.641.user.js</url>
+    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.646.user.js</url>
     <log><![CDATA[
-    - Mise à jour des points (MAJ looki)
+    - Fix panneau de configuration (MAJ looki)
     ]]></log>
 </eude>
