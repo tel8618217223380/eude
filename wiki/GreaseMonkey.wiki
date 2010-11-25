@@ -17,7 +17,7 @@
  * Mise à jour des membres d'un empire
  * Simple d’utilisation, il faut au préalable l’extension [https://addons.mozilla.org/fr/firefox/addon/748/ Grease Monkey pour Firefox].
  * Une fois celui ci installé, et Firefox redémarré.
- * Installer le [http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.641.user.js script GreaseMonkey] juste en cliquant dessus et validant l’install.
+ * Installer le [http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.646.user.js script GreaseMonkey] juste en cliquant dessus et validant l’install.
 
 ====Configuration du serveur du jeu sur le DE:====
 Pour configurer le serveur de jeu utilisé par votre DE afin de ne pas mélanger australis, boréalis et polaris, rendez vous dans l'administration du DE, onglet configuration et configurer l'options *Serveur de jeu autorisé pour GreaseMonkey* comme indiqué ci dessous:
