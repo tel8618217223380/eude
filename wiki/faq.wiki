@@ -1,11 +1,12 @@
 #summary Foire Aux Questions
+#labels Featured,Phase-Support
 
 = Questions =
  * [#Pouvez_vous_installer_un_DataEngine Pouvez vous m'installer un DataEngine] ?
  * [#Comment_traduire_eude Comment traduire eude] ?
  * [#Page_partiellement_blanche Page partiellement blanche]
  * [#Identification_Impossible Identification Impossible]
- * Erreur: [#failed_to_open stream:_Permission_denied failed to open stream: Permission denied]
+ * Erreur: [#failed_to_open_stream:_Permission_denied failed to open stream: Permission denied]
  * [#Modifier_le_rayon_de_scan Modifier le rayon de scan] (Addons Scanner)
  * [#Comment_devenir_beta_testeur_ou_developpeur Comment devenir béta testeur ou développeur] sur eude
  * [#FAQ FAQ] incomplète ?
