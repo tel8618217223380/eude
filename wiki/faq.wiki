@@ -5,6 +5,7 @@
  * [#Comment_traduire_eude Comment traduire eude] ?
  * [#Page_partiellement_blanche Page partiellement blanche]
  * [#Identification_Impossible Identification Impossible]
+ * Erreur: [#failed_to_open stream:_Permission_denied failed to open stream: Permission denied]
  * [#Modifier_le_rayon_de_scan Modifier le rayon de scan] (Addons Scanner)
  * [#Comment_devenir_beta_testeur_ou_developpeur Comment devenir béta testeur ou développeur] sur eude
  * [#FAQ FAQ] incomplète ?
@@ -26,6 +27,10 @@
  * Vous pouvez modifier le ficher /Script/Entete.php à la ligne où ce trouve `define('ROOT_URL', '/');`
  pour corriger votre erreur de configuration. Les explications sont dans le fichier lui-même.
  
+=== failed to open stream: Permission denied ===
+ * Faire un chmod 777 ou 755 sur le dossier concerné.
+ * un tuto: http://www.douf.info/tutos/tutos/filezilla/page-4-faire-chmod.php
+
 === Modifier le rayon de scan ===
  * issue 264: Modifiez le fichier _/addons/scanner.conf.php_
 
