@@ -1,8 +1,9 @@
 <eude>
     <rversion>646</rversion>
     <eudeversion>1453</eudeversion>
-    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.646.user.js</url>
+    <url>http://eude.googlecode.com/svn/tag/GreaseMonkey/eude.651.user.js</url>
     <log><![CDATA[
-    - Fix panneau de configuration (MAJ looki)
+      English server only.<br/>
+    - Fix planet buildings & water %
     ]]></log>
 </eude>
