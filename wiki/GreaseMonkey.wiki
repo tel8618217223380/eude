@@ -4,6 +4,7 @@
 ==Voici donc un script permettant d’envoyer automatiquement les informations de certaines page du jeu au Data Engine de votre choix.==
 
 Je vous déconseille d'utiliser ce script pour l'instant (voir définitivement)
+
 voir [http://www.looki.fr/forum/r_actions_aux_annonces_f740/r_actions_sur_les_actions_contre_les_actes_de_triche_416906_6.html l'annonce lookienne]
 
 [http://www.looki.fr/forum/r_actions_aux_annonces_f740/r_actions_sur_les_actions_contre_les_actes_de_triche_416906_6.html#post5699988 Et ma "réponse"]
