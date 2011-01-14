@@ -1,5 +1,5 @@
 #summary Script GreaseMonkey
-#labels Featured
+#labels Deprecated
 
 Je vous déconseille d'utiliser ce script pour l'instant (voir définitivement)
 
