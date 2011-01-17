@@ -70,6 +70,7 @@
  * issue 314: Importation données de production
  * issue 315: Numéro de version "1.4.5.2" incorrecte (la 1.4.5.1 est affiché)
  * issue 331: Fragment de code obsolète pouvant générer une fausse erreur.
+ * issue 371: Copy/paste wormhole does not work as this should do
 
 = Remerciements =
 
