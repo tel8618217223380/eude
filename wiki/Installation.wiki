@@ -1,5 +1,5 @@
 #summary Installation
-#labels Phase-Deploy,Featured
+#labels Phase-Deploy,Featured,Restrict-AddWikiComment-Commit
 
 === Pré-requis ===
 
